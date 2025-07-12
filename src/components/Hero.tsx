@@ -1,6 +1,41 @@
 "use client";
 
+import { useState, useEffect } from "react";
+
 const Hero = () => {
+  const [showFormarti, setShowFormarti] = useState<boolean>(false);
+  const [showSubtitle, setShowSubtitle] = useState<boolean>(false);
+  const [visibleWords, setVisibleWords] = useState<number>(0);
+  const words = ["Umani", "prima", "che", "risorse"];
+
+  useEffect(() => {
+    // First show FORMARTI and subtitle at the same time
+    const formartiTimer = setTimeout(() => {
+      setShowFormarti(true);
+      setShowSubtitle(true);
+    }, 300); // Start FORMARTI and subtitle animations after 300ms
+
+    // Then start the word-by-word animation for "Umani prima che risorse"
+    const wordsTimer = setTimeout(() => {
+      const interval = setInterval(() => {
+        setVisibleWords((prev) => {
+          if (prev < words.length) {
+            return prev + 1;
+          }
+          clearInterval(interval);
+          return prev;
+        });
+      }, 300); // Delay between each word appearing
+
+      return () => clearInterval(interval);
+    }, 400); // Start words animation after FORMARTI appears (300ms + 500ms delay)
+
+    return () => {
+      clearTimeout(formartiTimer);
+      clearTimeout(wordsTimer);
+    };
+  }, [words.length]);
+
   return (
     <section className="hero-section h-[65vh] flex flex-col items-center justify-center text-center bg-dark-900 relative overflow-hidden">
       {/* Background gradient overlay */}
@@ -11,19 +46,57 @@ const Hero = () => {
         {/* JOIO Logo/Image - placeholder for now */}
         <div className="joio-logo mb-6">
           {/* This will be replaced with the actual JOIO image */}
-          <div className="text-8xl md:text-9xl lg:text-[12rem] font-bold text-white tracking-wider">
+          <div
+            className={`text-8xl md:text-9xl lg:text-[12rem] font-bold text-white tracking-wider transition-all duration-900 ease-out ${
+              showFormarti
+                ? "opacity-100 scale-100 transform"
+                : "opacity-0 scale-75 transform"
+            }`}
+          >
             FORMARTI
           </div>
         </div>
 
         {/* Tagline */}
         <div className="tagline space-y-4">
-          <h1 className="text-xl md:text-2xl lg:text-3xl text-accent-teal font-light tracking-[0.3em] uppercase">
-            Educatrice Professionale e Formatrice Aziendale
+          <h1 className="text-xl md:text-2xl lg:text-3xl text-accent-teal font-light tracking-[0.3em] uppercase flex flex-col md:flex-row items-center justify-center gap-2">
+            <span
+              className={`transition-all duration-800 ease-out ${
+                showSubtitle
+                  ? "opacity-100 translate-x-0 transform"
+                  : "opacity-0 -translate-x-full transform"
+              }`}
+            >
+              Educatrice Professionale
+            </span>
+            <span
+              className={`transition-all duration-800 ease-out ${
+                showSubtitle
+                  ? "opacity-100 translate-x-0 transform"
+                  : "opacity-0 translate-x-full transform"
+              }`}
+            >
+              e Formatrice Aziendale
+            </span>
           </h1>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold tracking-[0.2em] uppercase">
-            Umani prima che risorse
+            {words.map((word, index) => (
+              <span
+                key={index}
+                className={`inline-block transition-all duration-700 ease-out ${
+                  index < visibleWords
+                    ? "opacity-100 scale-100 transform"
+                    : "opacity-0 scale-50 transform"
+                }`}
+                style={{
+                  transitionDelay: `${index * 100}ms`,
+                }}
+              >
+                {word}
+                {index < words.length - 1 && "\u00A0"}
+              </span>
+            ))}
           </h2>
         </div>
       </div>

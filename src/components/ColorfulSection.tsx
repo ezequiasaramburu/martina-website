@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUp } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 interface SectionData {
   id: string;
@@ -82,7 +83,7 @@ const sectionData: SectionData[] = [
     id: "style",
     title: "Consulenza Filosofica",
     description:
-      "Riflessione filosofica per la vita personale e aziendale. Esploriamo valori, etica e significato attraverso il dialogo per sviluppare una maggiore consapevolezza di sé e costruire una filosofia solida per decisioni personali e prodoti comerciali.",
+      "Riflessione filosofica per la vita personale e aziendale. Esploriamo valori, etica e significato attraverso il dialogo per sviluppare una maggiore consapevolezza di sé e costruire una filosofia solida per decisioni personali e prodotti commerciali.",
     backgroundColor: "bg-teal-400",
     textColor: "text-white",
     type: "text",
@@ -97,7 +98,7 @@ const TextSquare = ({ section }: { section: SectionData }) => (
       {section.title}
     </h2>
     {section.description && (
-      <p className="text-sm md:text-base lg:text-lg font-medium leading-relaxed max-w-md">
+      <p className="text-lg md:text-base lg:text-xl font-medium leading-relaxed max-w-md">
         {section.description}
       </p>
     )}
@@ -124,6 +125,44 @@ const ImageSquare = ({ section }: { section: SectionData }) => (
 );
 
 const ColorfulSection = () => {
+  const [visibleSections, setVisibleSections] = useState<Set<string>>(
+    new Set(["self-esteem-image", "self-esteem"])
+  );
+  const observerRef = useRef<IntersectionObserver | null>(null);
+  const sectionRefs = useRef<Map<string, HTMLElement>>(new Map());
+
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.getAttribute("data-section-id");
+            if (sectionId) {
+              setVisibleSections((prev) => new Set(prev).add(sectionId));
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: "0px 0px -100px 0px",
+      }
+    );
+
+    // Observe all sections
+    sectionRefs.current.forEach((element) => {
+      if (observerRef.current) {
+        observerRef.current.observe(element);
+      }
+    });
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
+  }, []);
+
   const getGridPosition = (index: number, sectionId: string) => {
     // Grid positioning for desktop/tablet (md+)
     const positions = {
@@ -139,16 +178,54 @@ const ColorfulSection = () => {
     return positions[sectionId as keyof typeof positions] || "";
   };
 
+  const getSlideDirection = (sectionId: string) => {
+    const leftColumnSections = [
+      "self-esteem-image",
+      "minimalism",
+      "eating-image",
+      "style",
+    ];
+    const rightColumnSections = [
+      "self-esteem",
+      "minimalism-image",
+      "eating",
+      "style-image",
+    ];
+
+    if (leftColumnSections.includes(sectionId)) {
+      return "slide-in-from-left";
+    } else if (rightColumnSections.includes(sectionId)) {
+      return "slide-in-from-right";
+    }
+    return "slide-in-from-left"; // fallback
+  };
+
+  const getAnimationClass = (sectionId: string) => {
+    if (visibleSections.has(sectionId)) {
+      return getSlideDirection(sectionId);
+    }
+    return "slide-hidden";
+  };
+
   return (
     <section className="colorful-section w-full">
       <div className="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 w-full">
         {sectionData.map((section, index) => (
           <div
             key={section.id}
+            data-section-id={section.id}
+            ref={(el) => {
+              if (el) {
+                sectionRefs.current.set(section.id, el);
+                if (observerRef.current) {
+                  observerRef.current.observe(el);
+                }
+              }
+            }}
             className={`relative w-full aspect-square ${getGridPosition(
               index,
               section.id
-            )}`}
+            )} ${getAnimationClass(section.id)}`}
           >
             {section.type === "text" ? (
               <TextSquare section={section} />

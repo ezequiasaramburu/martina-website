@@ -25,10 +25,10 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/"
-              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2"
+              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative ${
+                className={`relative focus:outline-none ${
                   isActive("/") ? "border-b-2 border-white" : "hover-underline"
                 }`}
               >
@@ -37,10 +37,10 @@ const Header = () => {
             </Link>
             <Link
               href="/about"
-              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2"
+              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative ${
+                className={`relative focus:outline-none ${
                   isActive("/about")
                     ? "border-b-2 border-white"
                     : "hover-underline"
@@ -51,10 +51,10 @@ const Header = () => {
             </Link>
             <Link
               href="/coaching"
-              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2"
+              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative ${
+                className={`relative focus:outline-none ${
                   isActive("/coaching")
                     ? "border-b-2 border-white"
                     : "hover-underline"
@@ -65,10 +65,10 @@ const Header = () => {
             </Link>
             <Link
               href="/contact"
-              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2"
+              className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative ${
+                className={`relative focus:outline-none ${
                   isActive("/contact")
                     ? "border-b-2 border-white"
                     : "hover-underline"
