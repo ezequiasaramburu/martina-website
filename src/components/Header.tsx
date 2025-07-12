@@ -60,7 +60,7 @@ const Header = () => {
                     : "hover-underline"
                 }`}
               >
-                COACHING
+                PER TE
               </span>
             </Link>
             <Link

@@ -24,8 +24,8 @@ const CoachingModalityCard = ({
       <div className={`${accentColor} p-6 text-white`}>
         <div className="flex items-center mb-4">
           <div>
-            <h3 className="text-2xl md:text-3xl font-light">{title}</h3>
-            <p className="text-lg font-light opacity-90">{subtitle}</p>
+            <h3 className="text-2xl md:text-3xl font-bold">{title}</h3>
+            <p className="text-lg font-medium opacity-90">{subtitle}</p>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ const CoachingModalities = () => {
           items: [
             "Chi vuole un percorso personalizzato di crescita (professionale o personale)",
             "Manager, freelance, professionisti in transizione o in fase di cambiamento",
-            "Persone che hanno bisogno di lavorare su una difficoltà specifica (es. gestione dello stress, assertività)",
+            "Persone che hanno bisogno di lavorare su una difficoltà specifica (es. gestione dello stress, disorientamento, autostima)",
           ],
         },
         {
@@ -90,7 +90,7 @@ const CoachingModalities = () => {
     },
     {
       title: "Formazione in aula",
-      subtitle: "Corsi strutturati su competenze soft",
+      subtitle: "Corsi strutturati su soft skills",
       accentColor: "bg-green-500",
       sections: [
         {
@@ -103,18 +103,18 @@ const CoachingModalities = () => {
         {
           title: "Come si struttura:",
           items: [
-            "Lezioni in presenza (o blended) con parti teoriche ed esercitazioni pratiche",
+            "Lezioni in presenza (o e-learning) con parti teoriche ed esercitazioni pratiche",
             "Durata: da mezza giornata a 2–3 giornate",
             "Materiali di supporto (slide, workbook, test autovalutativi)",
-            "Focus su casi concreti ed esempi calati nel contesto dei partecipanti",
+            "Focus sulla valutazione dei bisogni formativi",
           ],
         },
         {
           title: "Vantaggi:",
           items: [
-            "Stimola la consapevolezza collettiva",
-            "Favorisce il confronto tra pari",
-            "Più efficace quando serve trasferire competenze 'di base' a più persone contemporaneamente",
+            "Stimola l'apprendimento collettivo",
+            "Favorisce il confronto tra pari, il feedback sulle prestazioni e risparmio di tempo e costi",
+            "Creazione di senso di appartenenza e di gruppo",
           ],
         },
       ],
@@ -127,18 +127,18 @@ const CoachingModalities = () => {
         {
           title: "Ideale per:",
           items: [
-            "Chi ha già una base teorica e vuole mettersi in gioco",
-            "Team o gruppi misti che vogliono lavorare sulla coesione, il cambiamento, la creatività, il problem-solving",
-            "Situazioni in cui è importante 'fare esperienza' diretta (es. role playing sulla comunicazione assertiva, esercizi corporei sulla gestione dell'ansia, ecc.)",
+            "Sviluppare una cultura di responsabilità condivisa all'interno di un team",
+            "Favorire il confronto e la riflessione sul processo decisionale e dilemmi etici aziendali",
+            "Situazioni in cui è importante 'fare esperienza' diretta (es. role playing, mindfulness, esercizi corporei sulla gestione dell'ansia, ecc.)",
           ],
         },
         {
           title: "Come si struttura:",
           items: [
-            "Attività pratiche, esercitazioni in gruppo, simulazioni, feedback immediati",
-            "Facilitazione attiva, coinvolgente",
+            "Attività pratiche, esercitazioni in gruppo e simulazioni",
+            "Facilitazione con materiali didattici, brainstorming, attività all'aperto",
             "Spazi per la riflessione personale e la condivisione",
-            "Durata: 2 ore – 1 giornata",
+            "Durata: 3 ore – 1 giornata",
           ],
         },
         {
@@ -146,7 +146,7 @@ const CoachingModalities = () => {
           items: [
             "Apprendimento esperienziale (learning by doing)",
             "Forte coinvolgimento emotivo e motivazionale",
-            "Alto impatto trasformativo",
+            "Alto impatto trasformativo e di motivazione",
           ],
         },
       ],

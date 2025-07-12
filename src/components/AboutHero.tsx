@@ -31,6 +31,7 @@ const AboutHero = ({ title, subtitle, imageSrc, imageAlt }: AboutHeroProps) => {
           alt={imageAlt}
           fill
           className="object-contain"
+          sizes="(max-width: 1024px) 0px, 50vw"
           priority
         />
       </div>
