@@ -33,9 +33,9 @@ const ThreeColumnFeatures = ({
           {columns.map((column, index) => (
             <div
               key={index}
-              className={`text-center ${
+              className={`text-left ${
                 index < columns.length - 1
-                  ? "md:border-r md:border-gray-300 md:pr-8 lg:pr-12"
+                  ? "md:border-r md:border-gray-200 md:pr-8 lg:pr-12"
                   : ""
               }`}
             >

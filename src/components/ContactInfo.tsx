@@ -7,22 +7,21 @@ const ContactInfo = () => {
     {
       icon: Mail,
       title: "Email",
-      info: "hello@sjtreharne.com",
+      info: "formartinavecchio@gmail.com",
       description:
-        "Send me an email anytime - I typically respond within 24 hours",
+        "Invia un'email in qualsiasi momento - Rispondo entro 24 ore",
     },
     {
       icon: MapPin,
-      title: "Location",
-      info: "Auckland, New Zealand",
-      description:
-        "Based in the beautiful city of Auckland, offering both in-person and online sessions",
+      title: "Località",
+      info: "Pescara, Italia",
+      description: "Basata a Pescara, offro sia sessioni in persona che online",
     },
     {
       icon: Clock,
-      title: "Response Time",
-      info: "Within 24 hours",
-      description: "I aim to respond to all inquiries quickly and personally",
+      title: "Tempo di risposta",
+      info: "Entro 24 ore",
+      description: "Rispondo a tutte le richieste rapidamente e personalmente",
     },
   ];
 
@@ -31,11 +30,11 @@ const ContactInfo = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-dark-900 mb-6 leading-tight">
-            Let&apos;s Connect
+            Contattami
           </h2>
           <p className="text-lg text-dark-900/90 font-light leading-relaxed max-w-2xl mx-auto">
-            I&apos;m here to support you on your journey to better self-esteem
-            and confidence. Reach out and let&apos;s start the conversation.
+            Sono qui per supportarti nel tuo percorso verso una migliore fiducia
+            e fiducia. Contattami e iniziamo la conversazione.
           </p>
         </div>
 
@@ -60,13 +59,14 @@ const ContactInfo = () => {
 
         <div className="mt-16 p-8 bg-gray-50 rounded-lg text-center">
           <h3 className="text-2xl font-light text-dark-900 mb-4">
-            Ready to Begin?
+            Pronto ad iniziare?
           </h3>
           <p className="text-dark-900/90 font-light leading-relaxed max-w-2xl mx-auto">
-            Taking the first step is often the hardest part. I&apos;m here to
-            make it as easy as possible. Whether you&apos;re looking to work on
-            self-esteem, eating habits, minimalism, or personal style, I&apos;m
-            excited to help you create positive change in your life.
+            Prendere il primo passo è spesso la parte più difficile. Sono qui
+            per aiutarti a iniziare il tuo percorso. Sia che tu stia cercando di
+            lavorare sulla tua fiducia, sui tuoi comportamenti alimentari, su
+            minimalismo o su personalità, sono felice di aiutarti a creare un
+            cambiamento positivo nella tua vita.
           </p>
         </div>
       </div>

@@ -8,19 +8,19 @@ import Header from "@/components/Header";
 const AboutPage = () => {
   const featuresData = [
     {
-      title: "Qualified",
+      title: "Professionalità",
       description:
-        "As a certified Eating Psychology Coach and Life Coach, I'm qualified and passionate about helping people out of negative eating habits and into freedom, body confidence and good self-image. I love helping others find the boldness to wear what they love, eat what they fancy and do what their passionate about.",
+        "Mi sono laureata in Scienze dell’Educazione, della Formazione e in Filosofia. Ho approfondito la cura educativa e gli interventi di supporto in momenti di fragilità delle persone. La filosofia mi ha spinta a esplorare la ricerca di senso e la trasformazione. Il Master in Consulenza Filosofica ha unito teoria e pratica, permettendomi di accompagnare le persone valorizzando le loro potenzialità e domande in continua evoluzione.",
     },
     {
-      title: "Personal",
+      title: "Personalità",
       description:
-        "First and foremost I'm a wife and mother, so I'm currently living out my dream. I'm also a photographer and qualified Zumba Instructor. I love getting offline and into nature. So most weekends you'll find our little family in the woods, hanging in a hammock, making a fire and drinking tea together.",
+        '"Non mi fingo mai più intelligente, più bella, più giovane e più buona di quanto sono per apparire diversa, perché non ho bisogno di quelle menzogne. Vivo nell\'incredibile e indescrivibile lusso delle domande e delle risposte del mio tempo, che mi sono vicine e che sento come mie. Sono libera di vivere dove e come voglio, di leggere ciò che voglio, di pensare a tutto ciò che voglio come voglio, e di ascoltare chi voglio."',
     },
     {
-      title: "Faith",
+      title: "Eticità",
       description:
-        "I'm a Christian and therefore believe that you were created with love, care and there is purpose to your life. If that's what you believe too, I'm happy to help you find more intentionality in your faith life. But if you're not feeling it, we can leave the God-chat out of our sessions and focus on you.",
+        "Nel mio ruolo, l’etica professionale è il fondamento imprescindibile di ogni intervento. Credo profondamente che l'onestà intellettuale, la trasparenza e l’integrità siano la base per costruire spazi di apprendimento efficaci, relazioni autentiche e di fiducia con chi si accompagna nel percorso di crescita. Agisco sempre con responsabilità, ponendo al centro la persona e il suo benessere, nel rispetto delle diversità e della dignità di ciascuno.",
     },
   ];
 
@@ -29,13 +29,13 @@ const AboutPage = () => {
       <Header />
       <AboutHero
         title="Ciao, sono Martina Vecchio."
-        subtitle="Una formatrice e consulente filosofica basata a Pescara, Italia."
+        subtitle="Siamo quello che facciamo? Il nostro nome? Le nostre passioni o i nostri vizi? I nostri pensieri più strani o quelle azioni che fanno di noi qualcuno da ammirare?"
         imageSrc="/images/profile.jpeg"
         imageAlt="Martina Vecchio sitting on a wall with graffiti in a natural setting"
       />
 
       <ThreeColumnFeatures
-        sectionTitle="What I like about me:"
+        sectionTitle="Cosa ti piacerà di me:"
         columns={
           featuresData as [
             (typeof featuresData)[0],

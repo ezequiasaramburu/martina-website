@@ -11,9 +11,9 @@ interface AboutHeroProps {
 
 const AboutHero = ({ title, subtitle, imageSrc, imageAlt }: AboutHeroProps) => {
   return (
-    <section className="min-h-screen flex">
+    <section className="h-[65vh] flex">
       {/* Left side - Text content */}
-      <div className="w-full lg:w-1/2 bg-black flex items-center justify-center px-8 lg:px-16">
+      <div className="w-full lg:w-1/2 bg-dark-900 flex items-center justify-center px-8 lg:px-16">
         <div className="text-center lg:text-left max-w-lg">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
             {title}
@@ -25,12 +25,12 @@ const AboutHero = ({ title, subtitle, imageSrc, imageAlt }: AboutHeroProps) => {
       </div>
 
       {/* Right side - Image */}
-      <div className="hidden lg:block lg:w-1/2 relative">
+      <div className="hidden lg:block lg:w-1/2 relative pt-20">
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover"
+          className="object-contain"
           priority
         />
       </div>

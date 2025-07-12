@@ -114,6 +114,10 @@ const ImageSquare = ({ section }: { section: SectionData }) => (
         alt={section.imageAlt || ""}
         fill
         className="object-cover"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority={
+          section.image === "/images/1.png" || section.image === "/images/2.png"
+        }
       />
     )}
   </div>
