@@ -19,11 +19,11 @@ const Hero = () => {
         {/* Tagline */}
         <div className="tagline space-y-4">
           <h1 className="text-xl md:text-2xl lg:text-3xl text-accent-teal font-light tracking-[0.3em] uppercase">
-            Formatrice e Consulente Martina Vecchio
+            Educatrice Professionale e Formatrice Aziendale
           </h1>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-bold tracking-[0.2em] uppercase">
-            Life Coaching
+            Umani prima che risorse
           </h2>
         </div>
       </div>

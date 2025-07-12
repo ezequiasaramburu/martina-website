@@ -16,29 +16,20 @@ interface SectionData {
 
 const sectionData: SectionData[] = [
   {
-    id: "self-esteem",
-    title: "Self-Esteem",
-    description:
-      "Ever feel the pressure to love yourself, but don't know where to start? Self-love requires practise. Let's make time for you, change those negative thought patterns and pursue your passions.",
-    backgroundColor: "bg-blue-400",
-    textColor: "text-white",
-    type: "text",
-  },
-  {
     id: "self-esteem-image",
     title: "",
     backgroundColor: "bg-pink-400",
     textColor: "text-white",
-    image: "/images/book-journal.jpg", // You'll need to add this image
+    image: "/images/1.png",
     imageAlt: 'Blue journal with "MY SECRET PLAN TO RULE THE WORLD" text',
     type: "image",
   },
   {
-    id: "minimalism",
-    title: "Minimalism",
+    id: "self-esteem",
+    title: "Crescita Personale",
     description:
-      "Whether it's digital or physical decluttering you're after, we can work together to create more boundaries, balance and simplicity. Let's stop scrolling > start enjoying!",
-    backgroundColor: "bg-green-400",
+      "La crescita personale è il processo di cambiamento e sviluppo che ci porta a diventare la persona che vogliamo essere. Questo processo può essere guidato da un coach personale, che ci aiuta a superare i nostri limiti e a raggiungere i nostri obiettivi.",
+    backgroundColor: "bg-blue-400",
     textColor: "text-white",
     type: "text",
   },
@@ -47,33 +38,33 @@ const sectionData: SectionData[] = [
     title: "",
     backgroundColor: "bg-pink-500",
     textColor: "text-white",
-    image: "/images/yellow-phone.jpg", // You'll need to add this image
+    image: "/images/2.png",
     imageAlt: "Hands holding a yellow phone with blue nails",
     type: "image",
+  },
+  {
+    id: "minimalism",
+    title: "Formazione Aziendale",
+    description:
+      "Sviluppo delle competenze trasversali e soft skills per team e aziende. Miglioriamo la comunicazione, la leadership e la collaborazione attraverso percorsi formativi personalizzati che valorizzano il potenziale umano e professionale.",
+    backgroundColor: "bg-green-400",
+    textColor: "text-white",
+    type: "text",
   },
   {
     id: "eating-image",
     title: "",
     backgroundColor: "bg-orange-500",
     textColor: "text-white",
-    image: "/images/cherries-hand.jpg", // You'll need to add this image
+    image: "/images/4.png",
     imageAlt: "Hand holding cherries with red mesh bag",
     type: "image",
   },
   {
     id: "eating",
-    title: "Eating",
+    title: "Orientamento alla Scelta",
     description:
-      "Ditch the diets, emotional eating and the punishing work outs at the gym. We'll talk about where you picked up negative beliefs, find peace with food and drop the shame.",
-    backgroundColor: "bg-teal-400",
-    textColor: "text-white",
-    type: "text",
-  },
-  {
-    id: "style",
-    title: "Style",
-    description:
-      "Too many clothes and not enough to wear? What you wear can change how you feel, so we'll discover your personal style and create a capsule wardrobe. Let your clothes work for you.",
+      "Supporto nella definizione del percorso professionale e personale. Ti aiuto a esplorare le tue passioni, valutare le opzioni e prendere decisioni consapevoli per costruire un futuro allineato ai tuoi valori e obiettivi.",
     backgroundColor: "bg-purple-500",
     textColor: "text-white",
     type: "text",
@@ -83,9 +74,18 @@ const sectionData: SectionData[] = [
     title: "",
     backgroundColor: "bg-yellow-500",
     textColor: "text-white",
-    image: "/images/yellow-hoodie.jpg", // You'll need to add this image
+    image: "/images/3.png",
     imageAlt: "Person wearing a yellow hoodie",
     type: "image",
+  },
+  {
+    id: "style",
+    title: "Consulenza Filosofica",
+    description:
+      "Riflessione filosofica per la vita personale e aziendale. Esploriamo valori, etica e significato attraverso il dialogo per sviluppare una maggiore consapevolezza di sé e costruire una filosofia solida per decisioni personali e prodoti comerciali.",
+    backgroundColor: "bg-teal-400",
+    textColor: "text-white",
+    type: "text",
   },
 ];
 
@@ -97,7 +97,7 @@ const TextSquare = ({ section }: { section: SectionData }) => (
       {section.title}
     </h2>
     {section.description && (
-      <p className="text-sm md:text-base lg:text-lg font-light leading-relaxed max-w-md">
+      <p className="text-sm md:text-base lg:text-lg font-medium leading-relaxed max-w-md">
         {section.description}
       </p>
     )}
@@ -120,11 +120,32 @@ const ImageSquare = ({ section }: { section: SectionData }) => (
 );
 
 const ColorfulSection = () => {
+  const getGridPosition = (index: number, sectionId: string) => {
+    // Grid positioning for desktop/tablet (md+)
+    const positions = {
+      "self-esteem-image": "md:row-start-1 md:col-start-1",
+      "self-esteem": "md:row-start-1 md:col-start-2",
+      "minimalism-image": "md:row-start-2 md:col-start-2",
+      minimalism: "md:row-start-2 md:col-start-1",
+      "eating-image": "md:row-start-3 md:col-start-1",
+      eating: "md:row-start-3 md:col-start-2",
+      "style-image": "md:row-start-4 md:col-start-2",
+      style: "md:row-start-4 md:col-start-1",
+    };
+    return positions[sectionId as keyof typeof positions] || "";
+  };
+
   return (
     <section className="colorful-section w-full">
       <div className="grid grid-cols-1 grid-rows-8 md:grid-cols-2 md:grid-rows-4 w-full">
-        {sectionData.map((section) => (
-          <div key={section.id} className="relative w-full aspect-square">
+        {sectionData.map((section, index) => (
+          <div
+            key={section.id}
+            className={`relative w-full aspect-square ${getGridPosition(
+              index,
+              section.id
+            )}`}
+          >
             {section.type === "text" ? (
               <TextSquare section={section} />
             ) : (

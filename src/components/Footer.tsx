@@ -10,9 +10,9 @@ const Footer = () => {
           <div className="text-white font-light text-sm md:text-base">
             © {currentYear} Martina Vecchio. All rights reserved.
           </div>
-          <div className="text-white/70 font-light text-sm md:text-base text-center md:text-right">
-            <div>Certified Life & Eating Psychology Coach</div>
-            <div className="text-white/50 text-xs mt-1">Pescara, Italia</div>
+          <div className="text-white/80 font-light text-sm md:text-base text-center md:text-right">
+            <div>Educatrice Professionale e Formatrice Aziendale</div>
+            <div className="text-white/60 text-xs mt-1">Italia</div>
           </div>
         </div>
       </div>
