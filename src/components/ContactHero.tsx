@@ -8,9 +8,9 @@ const ContactHero = () => {
           Contattami
         </h1>
         <p className="text-lg md:text-xl text-white/90 font-light leading-relaxed max-w-2xl mx-auto">
-          Pronto ad iniziare il tuo percorso verso una migliore fiducia? Sono
-          felice di sentire da te e discutere come possiamo lavorare insieme per
-          creare un cambiamento positivo nella tua vita.
+          Vuoi migliorare le competenze del tuo team o avviare un percorso di
+          crescita personale? Compila il modulo o scrivimi direttamente: ti
+          risponderò presto.
         </p>
       </div>
     </section>

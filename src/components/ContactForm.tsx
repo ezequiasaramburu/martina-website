@@ -31,12 +31,11 @@ const ContactForm = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-dark-900 mb-6 leading-tight">
-            Send a Message
+            Invia un messaggio
           </h2>
-          <p className="text-lg text-dark-900/90 font-light leading-relaxed max-w-2xl mx-auto">
-            Ready to start your journey? Send me a message and let&apos;s chat
-            about how I can help you build confidence and create positive
-            change.
+          <p className="text-lg text-dark-900/90 font-light leading-relaxed max-w-4xl mx-auto">
+            Sono qui per supportarti nel tuo percorso di potenzamento personale
+            e professionale.
           </p>
         </div>
 
@@ -47,7 +46,7 @@ const ContactForm = () => {
                 htmlFor="name"
                 className="block text-sm font-medium text-dark-900 mb-2"
               >
-                Name *
+                Nome *
               </label>
               <input
                 type="text"
@@ -56,8 +55,8 @@ const ContactForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors"
-                placeholder="Your full name"
+                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500"
+                placeholder="Il tuo nome"
               />
             </div>
 
@@ -75,7 +74,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -86,7 +85,7 @@ const ContactForm = () => {
               htmlFor="subject"
               className="block text-sm font-medium text-dark-900 mb-2"
             >
-              Subject *
+              Oggetto *
             </label>
             <input
               type="text"
@@ -95,8 +94,8 @@ const ContactForm = () => {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors"
-              placeholder="What would you like to discuss?"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500"
+              placeholder="Cosa vorresti discutere?"
             />
           </div>
 
@@ -105,7 +104,7 @@ const ContactForm = () => {
               htmlFor="message"
               className="block text-sm font-medium text-dark-900 mb-2"
             >
-              Message *
+              Messaggio *
             </label>
             <textarea
               id="message"
@@ -114,17 +113,22 @@ const ContactForm = () => {
               onChange={handleChange}
               required
               rows={6}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors resize-vertical"
-              placeholder="Tell me about your goals, challenges, or any questions you have..."
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors resize-vertical text-dark-900 bg-white placeholder-gray-500"
+              placeholder="Descrivi i tuoi obiettivi, i tuoi problemi o le tue domande..."
             />
           </div>
 
           <div className="text-center">
             <button
               type="submit"
-              className="bg-accent-teal text-white px-8 py-3 font-semibold tracking-wide hover:bg-accent-teal/90 focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 transition-colors"
+              className="bg-dark-900 text-white px-8 py-3 font-semibold tracking-wide hover:bg-accent-teal focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 transition-colors border-2 border-dark-900 hover:border-accent-teal"
+              style={{
+                background: "#0f0f0f",
+                color: "#ffffff",
+                border: "2px solid #0f0f0f",
+              }}
             >
-              Send Message
+              Invia messaggio
             </button>
           </div>
         </form>
