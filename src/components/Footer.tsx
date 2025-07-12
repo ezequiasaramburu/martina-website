@@ -1,5 +1,7 @@
 "use client";
 
+import { Linkedin } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -12,7 +14,17 @@ const Footer = () => {
           </div>
           <div className="text-white/80 font-light text-sm md:text-base text-center md:text-right">
             <div>Educatrice Professionale e Formatrice Aziendale</div>
-            <div className="text-white/60 text-xs mt-1">Italia</div>
+            <div className="text-white/60 text-xs mt-1 flex items-center justify-center md:justify-end gap-2">
+              <a
+                href="https://linkedin.com/in/martina-vecchio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <Linkedin size={16} />
+              </a>
+              <span>Italia</span>
+            </div>
           </div>
         </div>
       </div>
