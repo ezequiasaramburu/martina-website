@@ -194,9 +194,7 @@ const CoachingModalities = () => {
           items: [
             {
               text: "Lezioni in presenza o in e-learning",
-              subItems: [
-                "Durata modulabile: Da mezza giornata a 2–3 giornate complete",
-              ],
+              subItems: ["Durata modulabile di sessioni in ore"],
               icon: Layers,
             },
             {
