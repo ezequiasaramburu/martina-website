@@ -161,9 +161,10 @@ const servicesData: Record<string, ServiceData> = {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const service = servicesData[params.slug];
+  const { slug } = await params;
+  const service = servicesData[slug];
 
   if (!service) {
     return {
@@ -181,12 +182,13 @@ export async function generateMetadata({
   };
 }
 
-export default function ServiceDetailPage({
+export default async function ServiceDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const service = servicesData[params.slug];
+  const { slug } = await params;
+  const service = servicesData[slug];
 
   if (!service) {
     notFound();
@@ -208,6 +210,7 @@ export default function ServiceDetailPage({
           benefits={service.benefits}
           callToAction={service.callToAction}
           backgroundColor={service.backgroundColor}
+          textColor={service.textColor}
         />
       </main>
       <Footer />
