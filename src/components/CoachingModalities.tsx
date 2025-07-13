@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface DetailSection {
   title: string;
   items: string[];
@@ -154,21 +156,34 @@ const CoachingModalities = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-20 px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Section Title */}
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 text-center mb-16 leading-tight">
-          Modalità di Formazione
-        </h2>
+    <>
+      <section className="bg-gray-50 pt-20 pb-10 px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 text-center mb-16 leading-tight">
+            Modalità di Formazione
+          </h2>
 
-        {/* Modalities Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-          {modalities.map((modality, index) => (
-            <CoachingModalityCard key={index} {...modality} />
-          ))}
+          {/* Modalities Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            {modalities.map((modality, index) => (
+              <CoachingModalityCard key={index} {...modality} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section className="py-10 px-8 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link
+            href="/contact"
+            className={`inline-block px-8 bg-dark-900 py-4 font-semibold text-lg`}
+            style={{ color: "white" }}
+          >
+            Contattami Ora
+          </Link>
+        </div>
+      </section>
+    </>
   );
 };
 

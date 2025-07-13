@@ -53,13 +53,6 @@ const ContactInfo = () => {
           <h3 className="text-2xl font-light text-dark-900 mb-4">
             Se non ora, quando? Se non tu, chi?
           </h3>
-          {/* <p className="text-dark-900/90 font-light leading-relaxed max-w-2xl mx-auto">
-            Prendere il primo passo è spesso la parte più difficile. Sono qui
-            per aiutarti a iniziare il tuo percorso. Sia che tu stia cercando di
-            lavorare sulla tua fiducia, sui tuoi comportamenti alimentari, su
-            minimalismo o su personalità, sono felice di aiutarti a creare un
-            cambiamento positivo nella tua vita.
-          </p> */}
         </div>
       </div>
     </section>
