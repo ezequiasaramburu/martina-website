@@ -139,6 +139,7 @@ const CoachingModalities = () => {
               subItems: [
                 "Coaching, ascolto attivo, feedback",
                 "Esercizi tra le sessioni: journaling, pratiche di consapevolezza, ecc.",
+                "Differenziazione dalla seduta terapeutica psicologica. Percorso di supporto per migliorare il benessere quotidiano.",
               ],
               icon: Layers,
             },
