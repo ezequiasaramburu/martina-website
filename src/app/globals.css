@@ -176,6 +176,7 @@ a {
   transform: scaleX(1);
 }
 
-a:hover .nav-underline::after {
+a:hover .nav-underline::after,
+.servizi-hover:hover .nav-underline::after {
   transform: scaleX(1);
 }

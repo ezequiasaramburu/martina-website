@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -90,20 +91,36 @@ const sectionData: SectionData[] = [
   },
 ];
 
-const TextSquare = ({ section }: { section: SectionData }) => (
-  <div
-    className={`${section.backgroundColor} ${section.textColor} p-8 md:p-12 flex flex-col justify-center items-center text-center h-full`}
-  >
-    <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-4">
-      {section.title}
-    </h2>
-    {section.description && (
-      <p className="text-lg md:text-base lg:text-xl font-medium leading-relaxed max-w-md">
-        {section.description}
-      </p>
-    )}
-  </div>
-);
+const TextSquare = ({ section }: { section: SectionData }) => {
+  const getSlugFromTitle = (title: string) => {
+    const slugMap: Record<string, string> = {
+      "Crescita Personale": "crescita-personale",
+      "Formazione Aziendale": "formazione-aziendale",
+      "Orientamento alla Scelta": "orientamento-scelta",
+      "Consulenza Filosofica": "consulenza-filosofica",
+    };
+    return slugMap[title];
+  };
+
+  const slug = getSlugFromTitle(section.title);
+
+  return (
+    <Link href={`/servizi/${slug}`} className="block h-full">
+      <div
+        className={`${section.backgroundColor} ${section.textColor} p-8 md:p-12 flex flex-col justify-center items-center text-center h-full hover:brightness-110 transition-all duration-300 cursor-pointer`}
+      >
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-4">
+          {section.title}
+        </h2>
+        {section.description && (
+          <p className="text-lg md:text-base lg:text-xl font-medium leading-relaxed max-w-md">
+            {section.description}
+          </p>
+        )}
+      </div>
+    </Link>
+  );
+};
 
 const ImageSquare = ({ section }: { section: SectionData }) => (
   <div
