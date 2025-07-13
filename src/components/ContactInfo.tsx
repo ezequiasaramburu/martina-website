@@ -34,7 +34,7 @@ const ContactInfo = () => {
           {contactDetails.map((detail, index) => (
             <div key={index} className="text-center">
               <div className="flex justify-center mb-4">
-                <detail.icon className={`w-8 h-8 ${detail.color}`} />
+                <detail.icon className={`w-8 h-8 text-accent-teal`} />
               </div>
               <h3 className="text-xl font-semibold text-dark-900 mb-2">
                 {detail.title}

@@ -25,11 +25,18 @@ const ServiceDetailContent = ({
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {sections.map((section, index) => (
-              <div key={index} className="flex flex-col">
-                <h2 className="text-2xl md:text-3xl font-light mb-6 text-center text-gray-900">
+              <div
+                key={index}
+                className={`flex flex-col ${
+                  index < sections.length - 1
+                    ? "md:border-r md:border-gray-200 md:pr-8"
+                    : ""
+                }`}
+              >
+                <h2 className="text-2xl md:text-3xl font-light mb-6 text-left text-gray-900">
                   {section.title}
                 </h2>
-                <p className="text-base md:text-lg leading-relaxed text-center text-gray-700">
+                <p className="text-base md:text-lg leading-relaxed text-left text-gray-700">
                   {section.content}
                 </p>
               </div>
