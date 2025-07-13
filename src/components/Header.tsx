@@ -28,8 +28,8 @@ const Header = () => {
               className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative focus:outline-none ${
-                  isActive("/") ? "border-b-2 border-white" : "hover-underline"
+                className={`relative focus:outline-none nav-underline ${
+                  isActive("/") ? "active" : ""
                 }`}
               >
                 HOME
@@ -40,10 +40,8 @@ const Header = () => {
               className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative focus:outline-none ${
-                  isActive("/about")
-                    ? "border-b-2 border-white"
-                    : "hover-underline"
+                className={`relative focus:outline-none nav-underline ${
+                  isActive("/about") ? "active" : ""
                 }`}
               >
                 CHI SONO
@@ -54,10 +52,8 @@ const Header = () => {
               className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative focus:outline-none ${
-                  isActive("/coaching")
-                    ? "border-b-2 border-white"
-                    : "hover-underline"
+                className={`relative focus:outline-none nav-underline ${
+                  isActive("/coaching") ? "active" : ""
                 }`}
               >
                 PER TE
@@ -68,10 +64,8 @@ const Header = () => {
               className="text-white hover:text-accent-teal transition-colors font-semibold tracking-wide px-4 py-2 focus:outline-none"
             >
               <span
-                className={`relative focus:outline-none ${
-                  isActive("/contact")
-                    ? "border-b-2 border-white"
-                    : "hover-underline"
+                className={`relative focus:outline-none nav-underline ${
+                  isActive("/contact") ? "active" : ""
                 }`}
               >
                 CONTATTI
