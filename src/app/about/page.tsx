@@ -1,9 +1,19 @@
-"use client";
-
 import AboutHero from "@/components/AboutHero";
 import ThreeColumnFeatures from "@/components/ThreeColumnFeatures";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chi Sono - FORMARTI | Martina Vecchio",
+  description:
+    "Scopri chi sono: laureata in Scienze dell'Educazione e Filosofia, offro coaching e consulenza filosofica per accompagnarti nella crescita personale.",
+  openGraph: {
+    title: "Chi Sono - FORMARTI | Martina Vecchio",
+    description:
+      "Scopri chi sono: laureata in Scienze dell'Educazione e Filosofia, offro coaching e consulenza filosofica per accompagnarti nella crescita personale.",
+  },
+};
 
 const AboutPage = () => {
   const featuresData = [

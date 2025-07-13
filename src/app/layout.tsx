@@ -13,30 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JOIO Life Coaching - Joy on the Inside & Out",
+  title: "FORMARTI - Martina Vecchio | Coaching e Consulenza Filosofica",
   description:
-    "Transform your life with JOIO Life Coaching. Discover joy on the inside and out through personalized coaching sessions focused on self-esteem, personal growth, and life fulfillment.",
+    "Umani prima che risorse. Accompagnamento nella crescita personale e professionale attraverso coaching e consulenza filosofica con Martina Vecchio.",
   keywords: [
-    "life coaching",
-    "self-esteem",
-    "personal growth",
-    "joy",
-    "transformation",
-    "life fulfillment",
+    "coaching",
+    "consulenza filosofica",
+    "crescita personale",
+    "formazione",
+    "Martina Vecchio",
+    "sviluppo professionale",
+    "filosofia pratica",
   ],
-  authors: [{ name: "JOIO Life Coaching" }],
+  authors: [{ name: "Martina Vecchio" }],
   openGraph: {
-    title: "JOIO Life Coaching - Joy on the Inside & Out",
+    title: "FORMARTI - Martina Vecchio | Coaching e Consulenza Filosofica",
     description:
-      "Transform your life with JOIO Life Coaching. Discover joy on the inside and out.",
+      "Umani prima che risorse. Accompagnamento nella crescita personale e professionale attraverso coaching e consulenza filosofica.",
     type: "website",
-    locale: "en_US",
+    locale: "it_IT",
   },
   twitter: {
     card: "summary_large_image",
-    title: "JOIO Life Coaching - Joy on the Inside & Out",
+    title: "FORMARTI - Martina Vecchio | Coaching e Consulenza Filosofica",
     description:
-      "Transform your life with JOIO Life Coaching. Discover joy on the inside and out.",
+      "Umani prima che risorse. Accompagnamento nella crescita personale e professionale attraverso coaching e consulenza filosofica.",
   },
   robots: {
     index: true,
@@ -55,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
