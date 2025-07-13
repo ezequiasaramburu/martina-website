@@ -184,7 +184,7 @@ const CoachingModalities = () => {
               icon: CheckCircle,
             },
             {
-              text: "Contesti in trasformazione (fusioni, cambi di leadership, riorganizzazioni) in cui è fondamentale costruire coesione e resilienza.",
+              text: "Contesti in trasformazione in cui è fondamentale costruire coesione e resilienza.",
               icon: CheckCircle,
             },
           ],
@@ -254,9 +254,7 @@ const CoachingModalities = () => {
               text: "Lavorare su tematiche profonde attraverso l'esperienza diretta:",
               icon: CheckCircle,
               subItems: [
-                "Role playing per affinare la comunicazione e la leadership",
-                "Esercizi corporei per la gestione dell'ansia e dello stress",
-                "Mindfulness e pratiche somatiche per migliorare il focus, la presenza e l'equilibrio emotivo",
+                "Creare spazi di lavoro sano attraverso la mindfulness, la gestione dello stress ed equilibrio emotivo",
               ],
             },
           ],
@@ -277,14 +275,6 @@ const CoachingModalities = () => {
               subItems: [
                 "Uso di materiali didattici, brainstorming e attività all’aperto",
                 "Metodi esperienziali per stimolare creatività e collaborazione",
-              ],
-              icon: Layers,
-            },
-            {
-              text: "Spazi di riflessione e condivisione",
-              subItems: [
-                "Momenti dedicati all’ascolto, al confronto e alla consapevolezza personale",
-                "Favorire il dialogo autentico e il feedback costruttivo",
               ],
               icon: Layers,
             },
