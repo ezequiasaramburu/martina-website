@@ -25,7 +25,7 @@ const ServiceDetailHero = ({
           {subtitle}
         </p>
         <p
-          className="text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto opacity-90"
+          className="text-lg md:text-xl font-light leading-relaxed max-w-4xl mx-auto opacity-90"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
