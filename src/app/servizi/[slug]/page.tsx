@@ -78,7 +78,7 @@ const servicesData: Record<string, ServiceData> = {
       {
         title: "Approccio Integrato",
         content:
-          "Il percorso formativo si sviluppa attraverso un approccio blended che combina momenti in presenza, attività digitali e di mindfulness, integrando sessioni di dialogo e riflessione guidata. Attraverso lezioni interattive, discussioni facilitanti e learning modules online, favorisco un coinvolgimento attivo e continuo dei partecipanti. Questo metodo stimola il pensiero critico, la condivisione di esperienze e il collaborative learning, permettendo di tradurre la riflessione in competenze concrete e comportamenti efficaci, applicabili nel contesto lavorativo.",
+          "Il percorso si basa su un approccio blended, che integra incontri in presenza, attività digitali, momenti di mindfulness e dialogo guidato. Attraverso moduli online, lezioni interattive e discussioni facilitanti, stimolo il pensiero critico, la condivisione e l’apprendimento collaborativo, trasformando la riflessione in competenze pratiche e comportamenti efficaci nel lavoro quotidiano.",
       },
       {
         title: "Risultati Misurabili",

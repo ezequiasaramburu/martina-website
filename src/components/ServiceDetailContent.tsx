@@ -37,7 +37,7 @@ const ServiceDetailContent = ({
                   {section.title}
                 </h2>
                 {section.subtitle && (
-                  <p className="text-lg font-medium mb-4 text-left text-gray-800">
+                  <p className="text-lg font-medium mb-1 text-left text-gray-800">
                     {section.subtitle}
                   </p>
                 )}
