@@ -48,7 +48,7 @@ const sectionData: SectionData[] = [
     id: "minimalism",
     title: "Formazione Aziendale",
     description:
-      "Non è solo una questione economica. Ogni team ha un potenziale unico, fatto di esperienze, talenti e generazioni diverse. La mia formazione aiuta le persone a comunicare meglio, lavorare in sinergia, assumere ruoli di leadership e affrontare le sfide con più consapevolezza. Costruisco percorsi su misura che favoriscono il dialogo tra Millennials e Gen Z, promuovendo una cultura aziendale inclusiva orientata ad un clima di benessere che permetta di rafforzare il senso di appartenenza andando oltre il compenso economico.",
+      "Ogni team ha un potenziale unico, fatto di esperienze, talenti e generazioni diverse. La mia formazione aiuta le persone a comunicare meglio, lavorare in sinergia, assumere ruoli di leadership e affrontare le sfide con più consapevolezza. Costruisco percorsi su misura che favoriscono il dialogo tra Millennials e Gen Z, promuovendo una cultura aziendale inclusiva orientata ad un clima di benessere che permetta di rafforzare il senso di appartenenza.",
     backgroundColor: "bg-green-400",
     textColor: "text-white",
     type: "text",
@@ -66,7 +66,7 @@ const sectionData: SectionData[] = [
     id: "eating",
     title: "Orientamento alla Scelta",
     description:
-      "La strada giusta è quella che scegli tu. Sei davanti a una scelta importante e ti senti incerto? Ti offro uno spazio sicuro e dedicato per esplorare passioni, dubbi e possibilità, sia nella vita personale che nel percorso professionale. Insieme analizzeremo i tuoi valori, le tue aspirazioni e le opportunità, per costruire un progetto di crescita che rispecchi davvero chi sei, aiutandoti a prendere decisioni autentiche.",
+      "La strada giusta è quella che scegli tu. <br /> Sei davanti a una scelta importante e ti senti incerto? <br /> Ti offro uno spazio sicuro e dedicato per esplorare passioni, dubbi e possibilità, sia nella vita personale che nel percorso professionale. Insieme analizzeremo i tuoi valori, le tue aspirazioni e le opportunità, per costruire un progetto di crescita che rispecchi davvero chi sei, aiutandoti a prendere decisioni autentiche.",
     backgroundColor: "bg-purple-500",
     textColor: "text-white",
     type: "text",
@@ -113,9 +113,10 @@ const TextSquare = ({ section }: { section: SectionData }) => {
           {section.title}
         </h2>
         {section.description && (
-          <p className="text-md md:text-base lg:text-xl font-medium leading-relaxed w-full max-w-lg md:max-w-xl lg:max-w-3xl">
-            {section.description}
-          </p>
+          <p
+            className="text-md md:text-base lg:text-xl font-medium leading-relaxed w-full max-w-lg md:max-w-xl lg:max-w-3xl"
+            dangerouslySetInnerHTML={{ __html: section.description }}
+          />
         )}
       </div>
     </Link>
