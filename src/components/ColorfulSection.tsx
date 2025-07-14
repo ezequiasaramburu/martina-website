@@ -30,7 +30,7 @@ const sectionData: SectionData[] = [
     id: "self-esteem",
     title: "Crescita Personale",
     description:
-      "Dentro di te esiste un potenziale autentico e prezioso, pronto a emergere. Il mio ruolo è accompagnarti con cura e attenzione a ritrovarlo, senza giudizio né pressioni. Questo percorso non è terapia, ma un viaggio di scoperta e di consapevolezza, un tempo dedicato a te stesso per ascoltare chi sei davvero, abbracciare ciò che ti rende unico e scegliere con coraggio la direzione del tuo cammino. Insieme, passo dopo passo, libereremo le tue risorse nascoste, supereremo insieme gli ostacoli e costruiremo le competenze che ti permetteranno di vivere pienamente la vita che desideri.",
+      "Dentro di te esiste un potenziale autentico e prezioso, pronto a emergere. Il mio ruolo è accompagnarti con cura e attenzione a ritrovarlo, senza giudizio né pressioni. Questo percorso non è terapia, ma un viaggio di scoperta e di consapevolezza, un tempo dedicato a te stesso per ascoltare chi sei davvero, abbracciare ciò che ti rende unico e scegliere con coraggio la direzione del tuo cammino.",
     backgroundColor: "bg-blue-400",
     textColor: "text-white",
     type: "text",
