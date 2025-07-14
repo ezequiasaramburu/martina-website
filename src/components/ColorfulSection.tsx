@@ -113,7 +113,7 @@ const TextSquare = ({ section }: { section: SectionData }) => {
           {section.title}
         </h2>
         {section.description && (
-          <p className="text-md md:text-base lg:text-xl font-medium leading-relaxed max-w-md">
+          <p className="text-md md:text-base lg:text-xl font-medium leading-relaxed w-full max-w-lg md:max-w-xl lg:max-w-3xl">
             {section.description}
           </p>
         )}
