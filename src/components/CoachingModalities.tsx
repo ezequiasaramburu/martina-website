@@ -94,27 +94,27 @@ const CoachingModalities = () => {
       subtitle: "Coaching individuale personalizzato",
       accentColor: "bg-blue-500",
       sections: [
-        {
-          title: "Ideale se stai cercando di:",
-          items: [
-            {
-              text: "Ritrovare chiarezza mentale e direzione in un momento di confusione o disorientamento.",
-              icon: CheckCircle,
-            },
-            {
-              text: "Superare un blocco interiore che ti frena da troppo tempo (insicurezza, paura del giudizio, autosabotaggio).",
-              icon: CheckCircle,
-            },
-            {
-              text: "Migliorare l’autostima e il rapporto con te stesso/a per affrontare nuove sfide con più sicurezza.",
-              icon: CheckCircle,
-            },
-            {
-              text: "Fare scelte professionali più allineate, soprattutto se sei in transizione, in burnout o hai bisogno di un cambio di rotta.",
-              icon: CheckCircle,
-            },
-          ],
-        },
+        // {
+        //   title: "Ideale se stai cercando di:",
+        //   items: [
+        //     {
+        //       text: "Ritrovare chiarezza mentale e direzione in un momento di confusione o disorientamento.",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Superare un blocco interiore che ti frena da troppo tempo (insicurezza, paura del giudizio, autosabotaggio).",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Migliorare l’autostima e il rapporto con te stesso/a per affrontare nuove sfide con più sicurezza.",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Fare scelte professionali più allineate, soprattutto se sei in transizione, in burnout o hai bisogno di un cambio di rotta.",
+        //       icon: CheckCircle,
+        //     },
+        //   ],
+        // },
         {
           title: "Come funziona il percorso individuale:",
           items: [
@@ -165,33 +165,33 @@ const CoachingModalities = () => {
       ],
     },
     {
-      title: "Formazione in aula",
+      title: "Formazione",
       subtitle: "Corsi strutturati su soft skills",
       accentColor: "bg-green-400",
       sections: [
+        // {
+        //   title: "Ideale per:",
+        //   items: [
+        //     {
+        //       text: "Team aziendali e gruppi di lavoro che vogliono migliorare la collaborazione, la comunicazione e l’efficienza.",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Professionisti che desiderano potenziare una competenza specifica (es. gestione dei conflitti, ascolto attivo, intelligenza emotiva, leadership).",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Organizzazioni che vogliono creare un linguaggio comune, allineare la cultura interna e favorire un clima più aperto e produttivo.",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Contesti in trasformazione in cui è fondamentale costruire coesione e resilienza.",
+        //       icon: CheckCircle,
+        //     },
+        //   ],
+        // },
         {
-          title: "Ideale per:",
-          items: [
-            {
-              text: "Team aziendali e gruppi di lavoro che vogliono migliorare la collaborazione, la comunicazione e l’efficienza.",
-              icon: CheckCircle,
-            },
-            {
-              text: "Professionisti che desiderano potenziare una competenza specifica (es. gestione dei conflitti, ascolto attivo, intelligenza emotiva, leadership).",
-              icon: CheckCircle,
-            },
-            {
-              text: "Organizzazioni che vogliono creare un linguaggio comune, allineare la cultura interna e favorire un clima più aperto e produttivo.",
-              icon: CheckCircle,
-            },
-            {
-              text: "Contesti in trasformazione in cui è fondamentale costruire coesione e resilienza.",
-              icon: CheckCircle,
-            },
-          ],
-        },
-        {
-          title: "Come funziona la formazione:",
+          title: "Come si eroga la formazione:",
           items: [
             {
               text: "Lezioni in presenza o in e-learning",
@@ -238,26 +238,26 @@ const CoachingModalities = () => {
       subtitle: "Laboratori pratici coinvolgenti",
       accentColor: "bg-pink-500",
       sections: [
-        {
-          title: "Ideale per:",
-          items: [
-            {
-              text: "Promuovere una cultura di responsabilità condivisa e rafforzare il senso di appartenenza all'interno del team.",
-              icon: CheckCircle,
-            },
-            {
-              text: "Stimolare il confronto attivo su dilemmi etici, processi decisionali e dinamiche relazionali complesse in azienda.",
-              icon: CheckCircle,
-            },
-            {
-              text: "Lavorare su tematiche profonde attraverso l'esperienza diretta:",
-              icon: CheckCircle,
-              subItems: [
-                "Creare spazi di lavoro sano attraverso la mindfulness, la gestione dello stress ed equilibrio emotivo",
-              ],
-            },
-          ],
-        },
+        // {
+        //   title: "Ideale per:",
+        //   items: [
+        //     {
+        //       text: "Promuovere una cultura di responsabilità condivisa e rafforzare il senso di appartenenza all'interno del team.",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Stimolare il confronto attivo su dilemmi etici, processi decisionali e dinamiche relazionali complesse in azienda.",
+        //       icon: CheckCircle,
+        //     },
+        //     {
+        //       text: "Lavorare su tematiche profonde attraverso l'esperienza diretta:",
+        //       icon: CheckCircle,
+        //       subItems: [
+        //         "Creare spazi di lavoro sano attraverso la mindfulness, la gestione dello stress ed equilibrio emotivo",
+        //       ],
+        //     },
+        //   ],
+        // },
         {
           title: "Come si strutturano i workshop esperienziali:",
           items: [
