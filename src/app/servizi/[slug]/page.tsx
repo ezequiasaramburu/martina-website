@@ -24,7 +24,7 @@ const servicesData: Record<string, ServiceData> = {
     title: "Crescita Personale",
     subtitle: "Scopri il tuo potenziale e diventa la persona che vuoi essere",
     description:
-      "Ti sei mai chiesto chi potresti diventare, se imparassi davvero ad ascoltarti? La crescita personale è un processo di scoperta e trasformazione: un cammino che ci aiuta a conoscerci, superare i nostri limiti e scegliere con consapevolezza la direzione in cui vogliamo andare. Non si tratta di cambiare ciò che sei, ma di far emergere ciò che già hai dentro. Con il supporto di un'educatrice, puoi sviluppare nuove competenze, affrontare le sfide con più fiducia e avvicinarti ogni giorno alla versione più autentica di te.",
+      "<span class='font-bold'> Ti sei mai chiesto chi potresti diventare, se imparassi davvero ad ascoltarti? </span> <br /> <span>La crescita personale è un processo di scoperta e trasformazione: un cammino che ci aiuta a conoscerci, superare i nostri limiti e scegliere con consapevolezza la direzione in cui vogliamo andare. Non si tratta di cambiare ciò che sei, ma di far emergere ciò che già hai dentro. Con il supporto di un'educatrice, puoi sviluppare nuove competenze, affrontare le sfide con più fiducia e avvicinarti ogni giorno alla versione più autentica di te.</span>",
     backgroundColor: "bg-blue-400",
     textColor: "text-white",
     sections: [
@@ -90,21 +90,22 @@ const servicesData: Record<string, ServiceData> = {
   },
   "orientamento-scelta": {
     title: "Orientamento alla Scelta",
-    subtitle: "Trova la tua direzione e prendi decisioni consapevoli",
+    subtitle:
+      "Ogni scelta educativa e professionale nasce dalla conoscenza di sé",
     description:
-      "Supporto nella definizione del percorso professionale e personale. Ti aiuto a esplorare le tue passioni, valutare le opzioni e prendere decisioni consapevoli per costruire un futuro allineato ai tuoi valori e obiettivi.",
+      "Se ti trovi in un momento di transizione o devi prendere una decisione importante sul tuo futuro, posso accompagnarti con un percorso strutturato di orientamento. Attraverso strumenti pedagogici, colloqui individuali e attività esplorative, ti aiuto a fare chiarezza sui tuoi interessi, valori e obiettivi, mettendo a fuoco le possibilità concrete a tua disposizione. Che si tratti di scegliere un percorso formativo, un cambio professionale o semplicemente ritrovare direzione, costruiremo insieme una visione coerente con chi sei e con ciò che vuoi diventare.",
     backgroundColor: "bg-purple-500",
     textColor: "text-white",
     sections: [
       {
         title: "Orientamento Professionale e Personale",
         content:
-          "Prendere decisioni importanti sulla propria carriera e vita può essere complesso. Offro supporto specializzato per aiutarti a esplorare le tue passioni, valutare le opzioni disponibili e prendere decisioni consapevoli e allineate con i tuoi valori.",
+          "L’orientamento personale riguarda chi sono, cosa voglio e come voglio vivere. Le domande che emergono spesso sono: Chi sono oggi, oltre i ruoli che ricopro? Cosa mi fa sentire in equilibrio? Perché mi sento svuotato, non motivato o sempre in affanno? L’orientamento professionale si concentra su cosa fare, dove andare e come crescere nel lavoro. Le domande più frequenti sono: Che direzione voglio dare alla mia carriera? Sto facendo un lavoro che mi rappresenta? È il momento di cambiare? Ma verso cosa?",
       },
       {
         title: "Metodologia Strutturata",
         content:
-          "Utilizzo strumenti di assessment, tecniche di coaching e riflessione filosofica per aiutarti a comprendere meglio te stesso, le tue motivazioni e i tuoi obiettivi. Questo processo ti permette di fare scelte più informate e autentiche.",
+          'Bilancio delle competenze Una metodologia strutturata molto usata nei contesti di orientamento professionale e programmi GOL. Analisi del percorso personale e professionale. Identificazione di competenze tecniche e trasversali. Progetto professionale e piano d’azione. Life Design Approach: Metodo sviluppato da psicologi e pedagogisti (es. Savickas, Guichard) che aiuta le persone a "progettare" la propria vita. Esplorazione del sé (valori, interessi, identità). Sperimentazione di micro-scelte e percorsi possibili. Costruzione di scenari futuri realistici e desiderabili',
       },
       {
         title: "Supporto Continuo",

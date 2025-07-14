@@ -24,9 +24,10 @@ const ServiceDetailHero = ({
         <p className="text-xl md:text-2xl font-light mb-8 max-w-4xl mx-auto">
           {subtitle}
         </p>
-        <p className="text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto opacity-90">
-          {description}
-        </p>
+        <p
+          className="text-lg md:text-xl font-light leading-relaxed max-w-3xl mx-auto opacity-90"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </div>
     </section>
   );
