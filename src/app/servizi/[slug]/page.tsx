@@ -178,7 +178,7 @@ const servicesData: Record<string, ServiceData> = {
       "Maggiore consapevolezza etica",
       "Chiarezza sui propri valori fondamentali",
       "Capacità di affrontare questioni esistenziali",
-      "Miglioramento delle competenze argomentative",
+      "Chiarificazione dei dilemmi etici legati all’uso dell’AI",
       "Crescita della saggezza pratica",
     ],
     callToAction: "Inizia il tuo percorso di consulenza filosofica",
