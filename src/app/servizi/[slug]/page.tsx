@@ -24,7 +24,7 @@ const servicesData: Record<string, ServiceData> = {
     title: "Crescita Personale",
     subtitle: "Scopri il tuo potenziale e diventa la persona che vuoi essere",
     description:
-      "La crescita personale è il processo di cambiamento e sviluppo che ci porta a diventare la persona che vogliamo essere. Questo processo può essere guidato da un coach personale, che ci aiuta a superare i nostri limiti e a raggiungere i nostri obiettivi.",
+      "Ti sei mai chiesto chi potresti diventare, se imparassi davvero ad ascoltarti? La crescita personale è un processo di scoperta e trasformazione: un cammino che ci aiuta a conoscerci, superare i nostri limiti e scegliere con consapevolezza la direzione in cui vogliamo andare. Non si tratta di cambiare ciò che sei, ma di far emergere ciò che già hai dentro. Con il supporto di un'educatrice, puoi sviluppare nuove competenze, affrontare le sfide con più fiducia e avvicinarti ogni giorno alla versione più autentica di te.",
     backgroundColor: "bg-blue-400",
     textColor: "text-white",
     sections: [
