@@ -99,21 +99,30 @@ const servicesData: Record<string, ServiceData> = {
   "orientamento-scelta": {
     title: "Orientamento alla Scelta",
     subtitle:
-      "Ogni scelta educativa e professionale nasce dalla conoscenza di sé",
+      "<span class='font-bold'>Ogni scelta personale e professionale nasce dalla conoscenza di sé</span>",
     description:
-      "Se ti trovi in un momento di transizione o devi prendere una decisione importante sul tuo futuro, posso accompagnarti con un percorso strutturato di orientamento. Attraverso strumenti pedagogici, colloqui individuali e attività esplorative, ti aiuto a fare chiarezza sui tuoi interessi, valori e obiettivi, mettendo a fuoco le possibilità concrete a tua disposizione. Che si tratti di scegliere un percorso formativo, un cambio professionale o semplicemente ritrovare direzione, costruiremo insieme una visione coerente con chi sei e con ciò che vuoi diventare.",
+      "Se ti trovi in un momento di transizione o devi prendere una decisione importante sul tuo futuro, posso accompagnarti con un percorso strutturato di orientamento. Attraverso strumenti pedagogici, colloqui individuali e attività esplorative, ti aiuto a fare chiarezza sui tuoi interessi, valori e obiettivi, mettendo a fuoco le possibilità concrete a tua disposizione.",
     backgroundColor: "bg-purple-500",
     textColor: "text-white",
     sections: [
       {
         title: "Orientamento Professionale e Personale",
-        content:
-          "L’orientamento personale riguarda chi sono, cosa voglio e come voglio vivere. Le domande che emergono spesso sono: Chi sono oggi, oltre i ruoli che ricopro? Cosa mi fa sentire in equilibrio? Perché mi sento svuotato, non motivato o sempre in affanno? L’orientamento professionale si concentra su cosa fare, dove andare e come crescere nel lavoro. Le domande più frequenti sono: Che direzione voglio dare alla mia carriera? Sto facendo un lavoro che mi rappresenta? È il momento di cambiare? Ma verso cosa?",
+        content: [
+          "Chi sono oggi, oltre i ruoli che ricopro?",
+          "Cosa mi fa sentire in equilibrio?",
+          "Perché mi sento svuotato, non motivato o sempre in affanno?",
+          "Che direzione voglio dare alla mia carriera?",
+          "Sto facendo un lavoro che mi rappresenta?",
+          "È il momento di cambiare? Ma verso cosa?",
+        ],
       },
       {
         title: "Metodologia Strutturata",
-        content:
-          'Bilancio delle competenze Una metodologia strutturata molto usata nei contesti di orientamento professionale e programmi GOL. Analisi del percorso personale e professionale. Identificazione di competenze tecniche e trasversali. Progetto professionale e piano d’azione. Life Design Approach: Metodo sviluppato da psicologi e pedagogisti (es. Savickas, Guichard) che aiuta le persone a "progettare" la propria vita. Esplorazione del sé (valori, interessi, identità). Sperimentazione di micro-scelte e percorsi possibili. Costruzione di scenari futuri realistici e desiderabili',
+        content: [
+          "Metodo strutturato utilizzato anche nei programmi GOL: analisi del percorso personale e lavorativo e mappatura di competenze tecniche e soft skills",
+          "Approccio pedagogico e psicologico (Savickas, Guichard) per progettare con consapevolezza la propria vita.",
+          "Costruzione di scenari futuri realistici e desiderabili",
+        ],
       },
       {
         title: "Supporto Continuo",
