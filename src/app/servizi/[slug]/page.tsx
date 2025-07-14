@@ -120,7 +120,7 @@ const servicesData: Record<string, ServiceData> = {
         title: "Metodologia Strutturata",
         content: [
           "Metodo strutturato utilizzato anche nei programmi GOL: analisi del percorso personale e lavorativo e mappatura di competenze tecniche e soft skills",
-          "Approccio pedagogico e psicologico (Savickas, Guichard) per progettare con consapevolezza la propria vita.",
+          "Approccio pedagogico e psicologico (Savickas, Guichard) per progettare con consapevolezza la propria vita",
           "Costruzione di scenari futuri realistici e desiderabili",
         ],
       },
