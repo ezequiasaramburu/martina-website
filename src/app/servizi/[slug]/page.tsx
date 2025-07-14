@@ -56,35 +56,35 @@ const servicesData: Record<string, ServiceData> = {
   },
   "formazione-aziendale": {
     title: "Formazione Aziendale",
-    subtitle: "Sviluppa le competenze del tuo team per un successo duraturo",
+    subtitle: "Persone soddisfatte, team più forti, risultati più solidi",
     description:
-      "Sviluppo delle competenze trasversali e soft skills per team e aziende. Miglioriamo la comunicazione, la leadership e la collaborazione attraverso percorsi formativi personalizzati che valorizzano il potenziale umano e professionale.",
+      "Se guidi un’azienda, sai quanto contano le competenze tecniche — ma sai anche che da sole non bastano. La comunicazione interna, la gestione dei conflitti, la leadership, la capacità di affrontare il cambiamento: sono tutte competenze “umane” che fanno davvero la differenza nei risultati. La mia proposta formativa si rivolge a imprese che credono nel valore delle persone. Progetto percorsi su misura, basati su obiettivi chiari e condivisi, per sviluppare le soft skills del team e creare un ambiente di lavoro più collaborativo, motivato e consapevole.",
     backgroundColor: "bg-green-400",
     textColor: "text-white",
     sections: [
       {
         title: "Formazione per il Successo Aziendale",
         content:
-          "Le competenze trasversali sono fondamentali per il successo di qualsiasi organizzazione. Offro percorsi formativi personalizzati che sviluppano le soft skills essenziali per team più efficaci, comunicazione migliore e leadership autentica.",
+          "Comunicazione efficace e ascolto attivo. Leadership collaborativa e gentile. Team building e coesione tra reparti. Intelligenza emotiva e gestione dei conflitti. Collaborazione tra generazioni (Millennial & Gen Z) Benessere organizzativo e prevenzione del burnout",
       },
       {
         title: "Approccio Integrato",
         content:
-          "Combino metodologie di coaching aziendale con principi di filosofia pratica per creare programmi formativi che non solo migliorano le performance, ma anche il benessere e la soddisfazione lavorativa dei partecipanti.",
+          "Il percorso formativo si sviluppa attraverso un approccio blended che combina momenti in presenza, attività digitali e di mindfulness, integrando sessioni di dialogo e riflessione guidata. Attraverso lezioni interattive, discussioni facilitanti e learning modules online, favorisco un coinvolgimento attivo e continuo dei partecipanti. Questo metodo stimola il pensiero critico, la condivisione di esperienze e il collaborative learning, permettendo di tradurre la riflessione in competenze concrete e comportamenti efficaci, applicabili nel contesto lavorativo.",
       },
       {
         title: "Risultati Misurabili",
         content:
-          "Ogni programma è progettato con obiettivi chiari e KPI misurabili. Monitoriamo i progressi e adattiamo il percorso per garantire risultati concreti e duraturi per la tua organizzazione.",
+          "Ogni programma è progettato con obiettivi chiari e KPI specifici. Monitorando costantemente i progressi, è possibile restituire l'efficacia della formazione attraverso report dettagliati, utili per comprendere concretamente i risultati raggiunti e valutare l’impatto della formazione sulla tua organizzazione.",
       },
     ],
     benefits: [
-      "Miglioramento della comunicazione interna",
-      "Sviluppo di competenze di leadership",
-      "Aumento della collaborazione e del team building",
-      "Gestione efficace dei conflitti",
-      "Crescita della motivazione e dell'engagement",
-      "Sviluppo di una cultura aziendale positiva",
+      "Comunicazione interna potenziata per favorire il dialogo tra Millennials e Gen Z",
+      "Leadership situazionale e management inclusivo",
+      "Team building intergenerazionale per rafforzare la coesione del gruppo",
+      "Strategie di gestione dei conflitti",
+      "Pratiche di mindfulness per aumentare consapevolezza e concentrazione, riducendo lo stress",
+      "Cultura organizzativa positiva e e orientata alla performance sostenibile",
     ],
     callToAction: "Trasforma il tuo team con la formazione aziendale",
   },
