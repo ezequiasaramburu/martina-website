@@ -81,7 +81,7 @@ const ServiceDetailContent = ({
                       : "text-teal-400"
                   }`}
                 />
-                <p className="text-lg text-gray-700">{benefit}</p>
+                <p className="text-lg text-gray-700 font-bold">{benefit}</p>
               </div>
             ))}
           </div>
