@@ -31,17 +31,17 @@ const servicesData: Record<string, ServiceData> = {
       {
         title: "Cos'è la Crescita Personale?",
         content:
-          "La crescita personale è un percorso di autodiscoverta e sviluppo che ti permette di esplorare le tue potenzialità, superare i limiti e costruire una vita più autentica e soddisfacente. È un processo continuo di apprendimento e trasformazione che coinvolge tutti gli aspetti della tua esistenza.",
+          "È un percorso educativo e relazionale che favorisce la consapevolezza di sé, il riconoscimento delle proprie risorse e l’attivazione del potenziale individuale. Significa imparare ad ascoltarsi, superare blocchi interiori, acquisire competenze trasversali e orientarsi in modo più consapevole nelle scelte di vita. Non è un traguardo da raggiungere, ma un processo continuo che coinvolge la persona nella sua interezza: emozioni, pensieri, relazioni, valori e desideri.",
       },
       {
         title: "Come Funziona?",
         content:
-          "Attraverso sessioni di coaching personalizzate, lavoriamo insieme per identificare i tuoi obiettivi, riconoscere i pattern limitanti e sviluppare strategie concrete per il cambiamento. Utilizzo tecniche di consulenza filosofica per aiutarti a riflettere profondamente sui tuoi valori e le tue aspirazioni.",
+          "Attraverso sessioni one-to-one personalizzate, utilizzo strumenti di coaching come il goal setting, l’analisi dei limiting beliefs e tecniche di empowerment personale. Lavoriamo insieme per definire obiettivi chiari, attivare le tue risorse interiori e sviluppare un action plan concreto e sostenibile. Ogni percorso è costruito su misura, con strumenti pratici per facilitare il cambiamento e la crescita, sia personale che professionale.",
       },
       {
         title: "Percorso Personalizzato",
         content:
-          "Ogni percorso è unico e progettato sulle tue specifiche esigenze. Partiremo da dove sei ora per arrivare dove vuoi essere, con un approccio graduale e sostenibile che rispetta i tuoi tempi e le tue circostanze.",
+          "Ogni persona ha una storia diversa, e tu hai la tua. Partiamo da ciò che sei oggi — le tue esperienze, i tuoi obiettivi, le tue sfide — per costruire insieme una strada su misura, concreta e flessibile. Il cammino sarà graduale, rispettoso dei tuoi tempi e delle tue risorse, pensato per accompagnarti passo dopo passo verso la versione di te che desideri diventare.",
       },
     ],
     benefits: [
