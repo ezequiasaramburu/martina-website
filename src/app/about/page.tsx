@@ -20,7 +20,7 @@ const AboutPage = () => {
     {
       title: "Professionalità",
       description:
-        "Mi sono laureata in Scienze dell’Educazione, della Formazione e in Filosofia. Ho approfondito la cura educativa e gli interventi di supporto in momenti di fragilità delle persone. La filosofia mi ha spinta a esplorare la ricerca di senso e la trasformazione. Il Master in Consulenza Filosofica ha unito teoria e pratica, permettendomi di accompagnare le persone valorizzando le loro potenzialità e domande in continua evoluzione.",
+        "Sono laureata in Filosofia, Scienze dell'Educazione e della Formazione. Il Master in Consulenza Filosofica e antropologia esistenziale ha unito teoria e pratica, permettendomi di guardare le persone con occhi più profondi: non solo per ciò che fanno, ma per ciò che cercano di diventare.",
     },
     {
       title: "Personalità",
