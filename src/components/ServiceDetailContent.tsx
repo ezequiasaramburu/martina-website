@@ -46,7 +46,7 @@ const ServiceDetailContent = ({
                     {section.content.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-start">
                         <span className="text-gray-400 mr-3 mt-1">•</span>
-                        <span>{item}</span>
+                        <span dangerouslySetInnerHTML={{ __html: item }} />
                       </li>
                     ))}
                   </ul>

@@ -142,16 +142,22 @@ const servicesData: Record<string, ServiceData> = {
   },
   "consulenza-filosofica": {
     title: "Consulenza Filosofica",
-    subtitle: "Rifletti profondamente per vivere con maggiore consapevolezza",
+    subtitle:
+      "Non è terapia, né psicologia: è un percorso di chiarificazione e pensiero critico",
     description:
-      "Riflessione filosofica per la vita personale e aziendale. Esploriamo valori, etica e significato attraverso il dialogo per sviluppare una maggiore consapevolezza di sé e costruire una filosofia solida per decisioni personali e prodotti commerciali.",
+      "Riflessione filosofica per la vita personale e aziendale. Esploriamo valori, etica e significato attraverso il dialogo per sviluppare una maggiore consapevolezza di sé e costruire una filosofia solida per decision making e prodotti commerciali.",
     backgroundColor: "bg-teal-400",
     textColor: "text-white",
     sections: [
       {
-        title: "La Filosofia come Strumento di Vita",
-        content:
-          "La consulenza filosofica non è solo teoria accademica, ma uno strumento pratico per la vita quotidiana. Attraverso il dialogo socratico e la riflessione critica, ti aiuto a esplorare le grandi domande dell'esistenza e a sviluppare una tua personale filosofia di vita.",
+        title: "La Filosofia come Strumento Strategico",
+        subtitle:
+          "Con strumenti filosofici, domande mirate e spazi di riflessione, esploriamo insieme:",
+        content: [
+          "I valori che vuoi esprimere nelle tue scelte",
+          "I dilemmi etici e decisionali che ti bloccano o guidano il tuo progetto",
+          "Il significato che attribuisci a successo, cambiamento, tempo e lavoro",
+        ],
       },
       {
         title: "Applicazione Pratica",
@@ -159,9 +165,12 @@ const servicesData: Record<string, ServiceData> = {
           "Applico principi filosofici a situazioni concrete, sia personali che professionali. Questo approccio ti permette di affrontare dilemmi etici, chiarire i tuoi valori e prendere decisioni più consapevoli e autentiche.",
       },
       {
-        title: "Dialogo e Riflessione",
-        content:
-          "La consulenza filosofica si basa sul dialogo maieutico, dove attraverso domande mirate e riflessioni condivise, arriviamo insieme a nuove comprensioni e prospettive. È un processo collaborativo di scoperta e crescita.",
+        title: "Lasciati ispirare da",
+        content: [
+          "<span class='font-bold'>Google</span>: integra filosofia, mindfulness e leadership consapevole nei suoi programmi. Ha coinvolto filosofi ed esperti di etica su temi come AI, lavoro e significato personale.",
+          "<span class='font-bold'>SAP & L'Oréal</span>: lavorano con filosofi e consulenti etici per affrontare dilemmi decisionali e sviluppare una governance più riflessiva e sostenibile.",
+          "<span class='font-bold'>IKEA</span>: forma i leader attraverso riflessioni su valori e senso del lavoro, per allineare etica dichiarata e pratiche aziendali.",
+        ],
       },
     ],
     benefits: [

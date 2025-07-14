@@ -84,7 +84,7 @@ const sectionData: SectionData[] = [
     id: "style",
     title: "Consulenza Filosofica",
     description:
-      "Pensiero critico per scelte consapevoli. Propongo un percorso di riflessione filosofica per persone e aziende, volto ad approfondire valori, etica e senso delle azioni. Supporto decisioni strategiche basate su solide fondamenta etiche, integrando temi cruciali come business ethics, responsabilità sociale e le sfide etiche dell’intelligenza artificiale. Un percorso per un equilibrio consapevole tra innovazione, valori e sostenibilità.",
+      "Pensiero critico per scelte consapevoli. <br /> Propongo un percorso di riflessione filosofica per persone e aziende, volto ad approfondire valori, etica e senso delle azioni. Supporto decisioni strategiche basate su solide fondamenta etiche, integrando temi cruciali come business ethics, responsabilità sociale e le sfide etiche dell’intelligenza artificiale. <br /> Un percorso per un equilibrio consapevole tra innovazione, valori e sostenibilità.",
     backgroundColor: "bg-teal-400",
     textColor: "text-white",
     type: "text",
