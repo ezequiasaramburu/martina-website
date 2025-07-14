@@ -58,7 +58,7 @@ const servicesData: Record<string, ServiceData> = {
     title: "Formazione Aziendale",
     subtitle: "Persone soddisfatte, team più forti, risultati più solidi",
     description:
-      "Se guidi un’azienda, sai quanto contano le competenze tecniche — ma sai anche che da sole non bastano. La comunicazione interna, la gestione dei conflitti, la leadership, la capacità di affrontare il cambiamento: sono tutte competenze “umane” che fanno davvero la differenza nei risultati. La mia proposta formativa si rivolge a imprese che credono nel valore delle persone. Progetto percorsi su misura, basati su obiettivi chiari e condivisi, per sviluppare le soft skills del team e creare un ambiente di lavoro più collaborativo, motivato e consapevole.",
+      "<span>Se guidi un’azienda, sai quanto contano le competenze tecniche — ma sai anche che da sole non bastano.</span> <span class='font-bold'>La comunicazione interna, la gestione dei conflitti, la leadership, la capacità di affrontare il cambiamento: sono tutte competenze “umane” che fanno davvero la differenza nei risultati. </span> <br /> <span>La mia proposta formativa si rivolge a imprese che credono nel valore delle persone. Progetto percorsi su misura, basati su obiettivi chiari e condivisi, per sviluppare le soft skills del team e creare un ambiente di lavoro più collaborativo, motivato e consapevole.</span>",
     backgroundColor: "bg-green-400",
     textColor: "text-white",
     sections: [
