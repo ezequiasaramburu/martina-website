@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircle, Layers, Award } from "lucide-react";
+import { Layers, Award } from "lucide-react";
 
 interface DetailSection {
   title: string;
