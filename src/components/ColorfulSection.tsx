@@ -30,7 +30,7 @@ const sectionData: SectionData[] = [
     id: "self-esteem",
     title: "Crescita Personale",
     description:
-      "La crescita personale è il processo di cambiamento e sviluppo che ci porta a diventare la persona che vogliamo essere. Questo processo può essere guidato da un coach personale, che ci aiuta a superare i nostri limiti e a raggiungere i nostri obiettivi.",
+      "Dentro di te esiste un potenziale autentico e prezioso, pronto a emergere. Il mio ruolo è accompagnarti con cura e attenzione a ritrovarlo, senza giudizio né pressioni. Questo percorso non è terapia, ma un viaggio di scoperta e di consapevolezza, un tempo dedicato a te stesso per ascoltare chi sei davvero, abbracciare ciò che ti rende unico e scegliere con coraggio la direzione del tuo cammino. Insieme, passo dopo passo, libereremo le tue risorse nascoste, supereremo insieme gli ostacoli e costruiremo le competenze che ti permetteranno di vivere pienamente la vita che desideri.",
     backgroundColor: "bg-blue-400",
     textColor: "text-white",
     type: "text",
@@ -48,7 +48,7 @@ const sectionData: SectionData[] = [
     id: "minimalism",
     title: "Formazione Aziendale",
     description:
-      "Sviluppo delle competenze trasversali e soft skills per team e aziende. Miglioriamo la comunicazione, la leadership e la collaborazione attraverso percorsi formativi personalizzati che valorizzano il potenziale umano e professionale.",
+      "Non è solo una questione economica. Ogni team ha un potenziale unico, fatto di esperienze, talenti e generazioni diverse. La mia formazione aiuta le persone a comunicare meglio, lavorare in sinergia, assumere ruoli di leadership e affrontare le sfide con più consapevolezza. Costruisco percorsi su misura che favoriscono il dialogo tra Millennials e Gen Z, promuovendo una cultura aziendale inclusiva orientata ad un clima di benessere che permetta di rafforzare il senso di appartenenza andando oltre il compenso economico.",
     backgroundColor: "bg-green-400",
     textColor: "text-white",
     type: "text",
@@ -66,7 +66,7 @@ const sectionData: SectionData[] = [
     id: "eating",
     title: "Orientamento alla Scelta",
     description:
-      "Supporto nella definizione del percorso professionale e personale. Ti aiuto a esplorare le tue passioni, valutare le opzioni e prendere decisioni consapevoli per costruire un futuro allineato ai tuoi valori e obiettivi.",
+      "La strada giusta è quella che scegli tu. Sei davanti a una scelta importante e ti senti incerto? Ti offro uno spazio sicuro e dedicato per esplorare passioni, dubbi e possibilità, sia nella vita personale che nel percorso professionale. Insieme analizzeremo i tuoi valori, le tue aspirazioni e le opportunità, per costruire un progetto di crescita che rispecchi davvero chi sei, aiutandoti a prendere decisioni autentiche.",
     backgroundColor: "bg-purple-500",
     textColor: "text-white",
     type: "text",
@@ -84,7 +84,7 @@ const sectionData: SectionData[] = [
     id: "style",
     title: "Consulenza Filosofica",
     description:
-      "Riflessione filosofica per la vita personale e aziendale. Esploriamo valori, etica e significato attraverso il dialogo per sviluppare una maggiore consapevolezza di sé e costruire una filosofia solida per decisioni personali e prodotti commerciali.",
+      "Pensiero critico per scelte consapevoli. Propongo un percorso di riflessione filosofica per persone e aziende, volto ad approfondire valori, etica e senso delle azioni. Supporto decisioni strategiche basate su solide fondamenta etiche, integrando temi cruciali come business ethics, responsabilità sociale e le sfide etiche dell’intelligenza artificiale. Un percorso per un equilibrio consapevole tra innovazione, valori e sostenibilità.",
     backgroundColor: "bg-teal-400",
     textColor: "text-white",
     type: "text",
@@ -113,7 +113,7 @@ const TextSquare = ({ section }: { section: SectionData }) => {
           {section.title}
         </h2>
         {section.description && (
-          <p className="text-lg md:text-base lg:text-xl font-medium leading-relaxed max-w-md">
+          <p className="text-md md:text-base lg:text-xl font-medium leading-relaxed max-w-md">
             {section.description}
           </p>
         )}
