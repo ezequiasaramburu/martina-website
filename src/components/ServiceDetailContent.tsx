@@ -4,7 +4,8 @@ import Link from "next/link";
 interface ServiceDetailContentProps {
   sections: {
     title: string;
-    content: string;
+    subtitle?: string;
+    content: string | string[];
   }[];
   benefits: string[];
   callToAction: string;
@@ -20,7 +21,6 @@ const ServiceDetailContent = ({
 }: ServiceDetailContentProps) => {
   return (
     <div className="bg-gray-50 text-gray-900">
-      {/* Main Content Sections */}
       <section className="py-20 px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -36,9 +36,25 @@ const ServiceDetailContent = ({
                 <h2 className="text-2xl md:text-3xl font-light mb-6 text-left text-gray-900">
                   {section.title}
                 </h2>
-                <p className="text-base md:text-lg leading-relaxed text-left text-gray-700">
-                  {section.content}
-                </p>
+                {section.subtitle && (
+                  <p className="text-lg font-medium mb-4 text-left text-gray-800">
+                    {section.subtitle}
+                  </p>
+                )}
+                {Array.isArray(section.content) ? (
+                  <ul className="text-base md:text-lg leading-relaxed text-left text-gray-700 space-y-3">
+                    {section.content.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start">
+                        <span className="text-gray-400 mr-3 mt-1">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-base md:text-lg leading-relaxed text-left text-gray-700">
+                    {section.content}
+                  </p>
+                )}
               </div>
             ))}
           </div>
