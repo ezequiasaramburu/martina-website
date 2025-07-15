@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,21 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
+  useEffect(() => {
+    if (submitStatus === "success" || submitStatus === "error") {
+      const timer = setTimeout(() => {
+        setSubmitStatus("idle");
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [submitStatus]);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,10 +36,43 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error("EmailJS configuration is missing");
+      }
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: "Martina",
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      setSubmitStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -38,6 +87,23 @@ const ContactForm = () => {
             e professionale.
           </p>
         </div>
+
+        {submitStatus === "success" && (
+          <div className="mb-8 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <p className="text-green-800 text-center font-medium">
+              Messaggio inviato con successo! Ti risponderò presto.
+            </p>
+          </div>
+        )}
+
+        {submitStatus === "error" && (
+          <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-lg">
+            <p className="text-red-800 text-center font-medium">
+              Si è verificato un errore nell&apos;invio del messaggio. Riprova
+              più tardi.
+            </p>
+          </div>
+        )}
 
         <form onSubmit={handleSubmit} className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -55,7 +121,8 @@ const ContactForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500"
+                disabled={isSubmitting}
+                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="Il tuo nome"
               />
             </div>
@@ -74,7 +141,8 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500"
+                disabled={isSubmitting}
+                className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -94,7 +162,8 @@ const ContactForm = () => {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500"
+              disabled={isSubmitting}
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder="Cosa vorresti discutere?"
             />
           </div>
@@ -112,8 +181,9 @@ const ContactForm = () => {
               value={formData.message}
               onChange={handleChange}
               required
+              disabled={isSubmitting}
               rows={6}
-              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors resize-vertical text-dark-900 bg-white placeholder-gray-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors resize-vertical text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder="Descrivi i tuoi obiettivi, i tuoi problemi o le tue domande..."
             />
           </div>
@@ -121,14 +191,17 @@ const ContactForm = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-dark-900 text-white px-8 py-3 font-semibold tracking-wide hover:bg-accent-teal focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 transition-colors border-2 border-dark-900 hover:border-accent-teal"
+              disabled={isSubmitting}
+              className="bg-dark-900 text-white px-8 py-3 font-semibold tracking-wide hover:bg-accent-teal focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 transition-colors border-2 border-dark-900 hover:border-accent-teal disabled:opacity-50 disabled:cursor-not-allowed"
               style={{
-                background: "#0f0f0f",
+                background: isSubmitting ? "#6b7280" : "#0f0f0f",
                 color: "#ffffff",
-                border: "2px solid #0f0f0f",
+                border: isSubmitting
+                  ? "2px solid #6b7280"
+                  : "2px solid #0f0f0f",
               }}
             >
-              Invia messaggio
+              {isSubmitting ? "Invio in corso..." : "Invia messaggio"}
             </button>
           </div>
         </form>
