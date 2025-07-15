@@ -107,14 +107,14 @@ const TextSquare = ({ section }: { section: SectionData }) => {
   return (
     <Link href={`/servizi/${slug}`} className="block h-full">
       <div
-        className={`${section.backgroundColor} ${section.textColor} p-8 md:p-12 flex flex-col justify-center items-center text-center h-full hover:brightness-110 transition-all duration-300 cursor-pointer`}
+        className={`${section.backgroundColor} ${section.textColor} p-6 md:p-8 lg:p-12 flex flex-col justify-center items-center text-center h-full hover:brightness-110 transition-all duration-300 cursor-pointer`}
       >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light tracking-wide mb-4">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wide mb-3 md:mb-4">
           {section.title}
         </h2>
         {section.description && (
           <p
-            className="text-md md:text-base lg:text-xl font-medium leading-relaxed w-full max-w-lg md:max-w-xl lg:max-w-3xl"
+            className="text-sm md:text-base lg:text-xl font-medium leading-relaxed w-full max-w-lg md:max-w-xl lg:max-w-3xl"
             dangerouslySetInnerHTML={{ __html: section.description }}
           />
         )}

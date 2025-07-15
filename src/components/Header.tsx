@@ -2,13 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 
 const Header = () => {
   const pathname = usePathname();
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const isActive = (path: string) => {
     return pathname === path;
@@ -24,6 +25,36 @@ const Header = () => {
     { name: "Orientamento alla Scelta", slug: "orientamento-scelta" },
     { name: "Consulenza Filosofica", slug: "consulenza-filosofica" },
   ];
+
+  // Handle clicks outside dropdown to close it
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsServicesDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleServicesClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsServicesDropdownOpen(!isServicesDropdownOpen);
+  };
+
+  const handleServicesMouseEnter = () => {
+    setIsServicesDropdownOpen(true);
+  };
+
+  const handleServicesMouseLeave = () => {
+    setIsServicesDropdownOpen(false);
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-md py-2 px-12">
@@ -63,11 +94,15 @@ const Header = () => {
 
             {/* Services Dropdown */}
             <div
+              ref={dropdownRef}
               className="relative text-white font-semibold tracking-wide px-4 py-2"
-              onMouseEnter={() => setIsServicesDropdownOpen(true)}
-              onMouseLeave={() => setIsServicesDropdownOpen(false)}
+              onMouseEnter={handleServicesMouseEnter}
+              onMouseLeave={handleServicesMouseLeave}
             >
-              <div className="flex items-center gap-1 cursor-pointer servizi-hover">
+              <div
+                className="flex items-center gap-1 cursor-pointer servizi-hover"
+                onClick={handleServicesClick}
+              >
                 <span
                   className={`relative nav-underline ${
                     isServicesActive() ? "active" : ""
@@ -92,6 +127,7 @@ const Header = () => {
                           key={service.slug}
                           href={`/servizi/${service.slug}`}
                           className="block px-4 py-3 text-white  hover:bg-dark-800/50  font-medium"
+                          onClick={() => setIsServicesDropdownOpen(false)}
                         >
                           {service.name}
                         </Link>
