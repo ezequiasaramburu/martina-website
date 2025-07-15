@@ -180,3 +180,32 @@ a:hover .nav-underline::after,
 .servizi-hover:hover .nav-underline::after {
   transform: scaleX(1);
 }
+
+/* Custom breakpoint for navigation at 795px */
+@media (max-width: 795px) {
+  .nav-desktop {
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: flex;
+  }
+  
+  .nav-mobile-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 796px) {
+  .nav-desktop {
+    display: flex;
+  }
+  
+  .nav-mobile {
+    display: none;
+  }
+  
+  .nav-mobile-menu {
+    display: none;
+  }
+}

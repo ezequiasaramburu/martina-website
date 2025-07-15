@@ -66,7 +66,7 @@ const Header = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="nav-desktop items-center gap-4">
             <Link
               href="/"
               className="text-white  font-semibold tracking-wide px-4 py-2 focus:outline-none"
@@ -165,7 +165,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="nav-mobile">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white  "
@@ -181,7 +181,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-dark-900/95 backdrop-blur-md border-t border-dark-600 mt-2">
+          <div className="nav-mobile-menu bg-dark-900/95 backdrop-blur-md border-t border-dark-600 mt-2">
             <div className="px-4 py-6 space-y-4">
               <Link
                 href="/"
