@@ -69,7 +69,6 @@ const Hero = () => {
             >
               Educatrice Professionale
             </span>
-            <span className="mx-2">e</span>
             <span
               className={`inline-block transition-all duration-800 ease-out ${
                 showSubtitle
@@ -77,6 +76,7 @@ const Hero = () => {
                   : "opacity-0 translate-x-full transform"
               }`}
             >
+              <span className="mx-2">e</span>
               Formatrice Aziendale
             </span>
           </h1>
