@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white font-light text-sm md:text-base">
-            © {currentYear} Martina Vecchio. All rights reserved.
+            © {currentYear} Martina Vecchio. Tutti i diritti riservati.
           </div>
           <div className="text-white/80 font-light text-sm md:text-base text-center md:text-right">
             <div>Educatrice Professionale e Formatrice Aziendale</div>
