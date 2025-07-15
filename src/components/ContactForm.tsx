@@ -164,7 +164,7 @@ const ContactForm = () => {
               required
               disabled={isSubmitting}
               className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
-              placeholder="Cosa vorresti discutere?"
+              placeholder="Ambito di interesse"
             />
           </div>
 
