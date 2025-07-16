@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://martinavecchio.com
+Host: https://www.martinavecchio.com
 
 # Sitemaps
-Sitemap: https://martinavecchio.com/sitemap.xml
-Sitemap: https://martinavecchio.com/server-sitemap.xml
+Sitemap: https://www.martinavecchio.com/sitemap.xml
+Sitemap: https://www.martinavecchio.com/server-sitemap.xml
