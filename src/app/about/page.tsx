@@ -1,5 +1,6 @@
 import AboutHero from "@/components/AboutHero";
 import ThreeColumnFeatures from "@/components/ThreeColumnFeatures";
+import BookShowcase from "@/components/BookShowcase";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
@@ -55,6 +56,15 @@ const AboutPage = () => {
         }
         backgroundColor="bg-gray-50"
         textColor="text-gray-900"
+      />
+
+      <BookShowcase
+        title="Il mio e-book"
+        description=" La filosofia che si fa pratica e diventa consulenza filosofica, strumento delle risorse umane che possono e devono prendere parola nelle aziende. Perché? Facile, perché la filosofia s'intende di niente e tutto, soprattutto di vita. E l'azienda che cos'è? Insieme di vite che danno vita ad altra vita."
+        imageSrc="/images/book.jpg"
+        imageAlt="Libro di Martina Vecchio"
+        buttonText="Scopri di più"
+        buttonLink="https://www.amazon.it/-/en/Martina-Vecchio-ebook/dp/B0CPMD38P8/ref=sr_1_1?crid=3GAGXFAU55UCS&dib=eyJ2IjoiMSJ9.iSDjPoqCfoNXUfvCdI3exg8cZjcO_Z36l0VYgKpf6bh-YF1FfD0lFrK9HzSwvYRPvCGZmivLomUKQ1RAi7AkGgVZn68G8fwElppn8HiBjkYs0oLjHTRL75WeMp1lW_DRLQOOAl9kbfcTEywywr0Kgy-BgY03HpIDNODBeOoUYJCkdYUzKHHHnXR7ge8g9Jsdm5a4kjRgKEqPamvAazqVaa5YQJUHNsvYTQ4Qqm1vjtha44Bi6iLzhPkersGV7ztDReuLSc1xUtFhM6RvKEO-fDle8cQrYpYtKVmMgH_tYaM.Ll41R--6tzJTOJ7iMCeFNRSNHwiIi_SJl-fDehanC0s&dib_tag=se&keywords=martina+vecchio&qid=1752678482&sprefix=martina+vecchio+%2Caps%2C123&sr=8-1"
       />
 
       <Footer />
