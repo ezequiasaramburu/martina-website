@@ -30,19 +30,22 @@ const servicesData: Record<string, ServiceData> = {
     textColor: "text-white",
     sections: [
       {
-        title: "Cos'è la Crescita Personale?",
+        title: "Cos'è?",
         content:
-          "È un percorso educativo e relazionale che favorisce la consapevolezza di sé, il riconoscimento delle proprie risorse e l’attivazione del potenziale individuale. Significa imparare ad ascoltarsi, superare blocchi interiori, acquisire competenze trasversali e orientarsi in modo più consapevole nelle scelte di vita. Non è un traguardo da raggiungere, ma un processo continuo che coinvolge la persona nella sua interezza: emozioni, pensieri, relazioni, valori e desideri.",
+          "È un percorso educativo e relazionale che favorisce la consapevolezza di sé, il riconoscimento delle proprie risorse e l'attivazione del potenziale individuale. Significa imparare ad ascoltarsi, superare blocchi interiori, acquisire competenze trasversali e orientarsi in modo più consapevole nelle scelte di vita. Non è un traguardo da raggiungere, ma un processo continuo che coinvolge la persona nella sua interezza: emozioni, pensieri, relazioni, valori e desideri.",
       },
       {
-        title: "Come Funziona?",
-        content:
-          "Attraverso sessioni one-to-one personalizzate, utilizzo strumenti di coaching come il goal setting, l’analisi dei limiting beliefs e tecniche di empowerment personale. Lavoriamo insieme per definire obiettivi chiari, attivare le tue risorse interiori e sviluppare un action plan concreto e sostenibile. Ogni percorso è costruito su misura, con strumenti pratici per facilitare il cambiamento e la crescita, sia personale che professionale.",
+        title: "Come Funziona",
+        content: [
+          "Incontri regolari<br/>1 sessione ogni 1-2 settimane <br/> Durata: 1h",
+          "Obiettivi personalizzati<br/>Definiti insieme in base ai tuoi bisogni<br/>Monitoraggio costante dei progressi",
+          "Strumenti pratici<br/>Coaching, ascolto attivo, feedback mirato<br/>Esercizi tra le sessioni: journaling, mindfulness, ecc.<br/>Non è terapia · Focus sul benessere quotidiano",
+        ],
       },
       {
         title: "Percorso Personalizzato",
         content:
-          "Ogni persona ha una storia diversa, e tu hai la tua. Partiamo da ciò che sei oggi — le tue esperienze, i tuoi obiettivi, le tue sfide — per costruire insieme una strada su misura, concreta e flessibile. Il cammino sarà graduale, rispettoso dei tuoi tempi e delle tue risorse, pensato per accompagnarti passo dopo passo verso la versione di te che desideri diventare.",
+          "Ogni persona ha una storia diversa, e tu hai la tua. Partiamo da ciò che sei oggi, le tue esperienze, i tuoi obiettivi, le tue sfide per costruire insieme una strada su misura, concreta e flessibile. Il cammino sarà graduale, rispettoso dei tuoi tempi e delle tue risorse, pensato per accompagnarti passo dopo passo verso la versione di te che desideri diventare.",
       },
     ],
     benefits: [
@@ -59,7 +62,7 @@ const servicesData: Record<string, ServiceData> = {
     title: "Formazione Aziendale",
     subtitle: "Persone soddisfatte, team più forti, risultati più solidi",
     description:
-      "<span>Se guidi un’azienda, sai quanto contano le competenze tecniche — ma sai anche che da sole non bastano.</span> <br /> <span class='font-bold'>La comunicazione interna, la gestione dei conflitti, la leadership, la capacità di affrontare il cambiamento: sono tutte competenze “umane” che fanno davvero la differenza nei risultati. </span> <br /> <span>La mia proposta formativa si rivolge a imprese che credono nel valore delle persone. <br /> Progetto percorsi su misura, basati su obiettivi chiari e condivisi, per sviluppare le soft skills del team e creare un ambiente di lavoro più collaborativo, motivato e consapevole.</span>",
+      "<span>Se guidi un’azienda, sai quanto contano le competenze tecniche — ma sai anche che da sola non bastano.</span> <br /> <span class='font-bold'>La comunicazione interna, la gestione dei conflitti, la leadership, la capacità di affrontare il cambiamento: sono tutte competenze “umane” che fanno davvero la differenza nei risultati. </span> <br /> <span>La mia proposta formativa si rivolge a imprese che credono nel valore delle persone. <br /> Progetto percorsi su misura, basati su obiettivi chiari e condivisi, per sviluppare le soft skills del team e creare un ambiente di lavoro più collaborativo, motivato e consapevole.</span>",
     backgroundColor: "bg-green-400",
     textColor: "text-white",
     sections: [
@@ -76,14 +79,17 @@ const servicesData: Record<string, ServiceData> = {
         ],
       },
       {
-        title: "Approccio Integrato",
-        content:
-          "Il percorso si basa su un approccio blended, che integra incontri in presenza, attività digitali, momenti di mindfulness e dialogo guidato. Attraverso moduli online, lezioni interattive e discussioni facilitanti, stimolo il pensiero critico, la condivisione e l’apprendimento collaborativo, trasformando la riflessione in competenze pratiche e comportamenti efficaci nel lavoro quotidiano.",
+        title: "Come Funziona",
+        content: [
+          "Corsi in presenza o e-learning<br/>Durata modulabile di sessioni in ore",
+          "Materiali inclusi<br/>Slide, workbook operativi, test di autovalutazione e strumenti utili per integrare e consolidare i contenuti del corso",
+          "Analisi dei bisogni<br/>Ogni percorso parte da una valutazione preliminare dei bisogni formativi, per costruire contenuti rilevanti e personalizzati per il gruppo",
+        ],
       },
       {
         title: "Risultati Misurabili",
         content:
-          "Ogni programma è progettato con obiettivi chiari e KPI specifici. Monitorando costantemente i progressi, è possibile restituire l'efficacia della formazione attraverso report dettagliati, utili per comprendere concretamente i risultati raggiunti e valutare l’impatto della formazione sulla tua organizzazione.",
+          "Ogni programma è progettato con obiettivi chiari e KPI specifici. Monitorando costantemente i progressi, è possibile restituire l'efficacia della formazione attraverso report dettagliati, utili per comprendere concretamente i risultati raggiunti e valutare l'impatto della formazione sulla tua organizzazione.",
       },
     ],
     benefits: [
@@ -160,9 +166,11 @@ const servicesData: Record<string, ServiceData> = {
         ],
       },
       {
-        title: "Applicazione Pratica",
-        content:
-          "Applico principi filosofici a situazioni concrete, sia personali che professionali. Questo approccio ti permette di affrontare dilemmi etici, chiarire i tuoi valori e prendere decisioni più consapevoli e autentiche.",
+        title: "Come si strutturano i workshop esperienziali",
+        content: [
+          "Attività pratiche e dinamiche di gruppo<br/>Esercitazioni, simulazioni e role playing per imparare facendo<br/>Coinvolgimento attivo di tutti i partecipanti",
+          "Facilitazione interattiva<br/>Uso di materiali didattici, brainstorming e attività all'aperto<br/>Metodi esperienziali per stimolare creatività e collaborazione",
+        ],
       },
       {
         title: "Lasciati ispirare da",
