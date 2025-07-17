@@ -10,7 +10,7 @@ const CoachingHero = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
           Io non posso insegnare niente a nessuno, <br />
           posso solo aiutarli a pensare.
-          <span className="text-right text-md md:text-lg text-white/70 font-medium italic ml-6">
+          <span className="text-right text-xs md:text-md lg:text-lg text-white/70 font-medium italic lg:ml-12 md:ml-8 ml-4">
             Socrate
           </span>
         </h1>
