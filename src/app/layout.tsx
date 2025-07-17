@@ -17,22 +17,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://martinavecchio.com"),
   title: {
-    default: "FORMARTI - Martina Vecchio | Coaching e Consulenza Filosofica",
-    template: "%s | FORMARTI - Martina Vecchio",
+    default: "FORMARTI - Martina Vecchio | Educatrice e Consulente Filosofica",
+    template: "%s | Martina Vecchio",
   },
   description:
-    "Umani prima che risorse. Accompagnamento professionale nella crescita personale e aziendale attraverso coaching, consulenza filosofica e formazione con Martina Vecchio. Laureata in Filosofia e Scienze dell'Educazione.",
+    "Umani prima che risorse. Accompagnamento professionale nella crescita personale e aziendale attraverso educatrice e formatrice, consulenza filosofica e formazione con Martina Vecchio. Laureata in Filosofia e Scienze dell'Educazione.",
   keywords: [
-    "coaching personale",
+    "educatrice e formatrice personale",
     "consulenza filosofica",
     "crescita personale",
     "formazione aziendale",
     "sviluppo professionale",
     "orientamento carriera",
-    "coaching Italia",
+    "educatrice e formatrice Italia",
     "Martina Vecchio",
     "filosofia pratica",
-    "leadership coaching",
+    "leadership educatrice e formatrice",
     "team building",
     "consulenza HR",
     "benessere organizzativo",
@@ -49,16 +49,16 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "FORMARTI - Martina Vecchio | Coaching e Consulenza Filosofica",
+    title: "FORMARTI - Martina Vecchio | Educatrice e Consulente Filosofica",
     description:
-      "Umani prima che risorse. Accompagnamento professionale nella crescita personale e aziendale attraverso coaching, consulenza filosofica e formazione.",
+      "Umani prima che risorse. Accompagnamento professionale nella crescita personale e aziendale attraverso educatrice e formatrice, consulenza filosofica e formazione.",
     url: "https://martinavecchio.com",
     siteName: "FORMARTI",
     type: "website",
     locale: "it_IT",
     images: [
       {
-        url: "/images/profile.jpeg",
+        url: "https://martinavecchio.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Martina Vecchio - Coach e Consulente Filosofico",
@@ -67,10 +67,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FORMARTI - Martina Vecchio | Coaching e Consulenza Filosofica",
+    title: "FORMARTI - Martina Vecchio | Educatrice e Consulente Filosofica",
     description:
-      "Umani prima che risorse. Accompagnamento professionale nella crescita personale e aziendale attraverso coaching e consulenza filosofica.",
-    images: ["/images/profile.jpeg"],
+      "Umani prima che risorse. Accompagnamento professionale nella crescita personale e aziendale attraverso educatrice e formatrice e consulenza filosofica.",
+    images: [
+      "https://martinavecchio.com/og-image.jpg",
+      "https://martinavecchio.com/twitter-card.jpg",
+    ],
     creator: "@martinavecchio",
   },
   robots: {
@@ -83,9 +86,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    google: "your-google-verification-code-here",
   },
   alternates: {
     canonical: "https://martinavecchio.com",

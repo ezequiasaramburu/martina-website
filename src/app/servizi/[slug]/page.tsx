@@ -203,15 +203,13 @@ export async function generateMetadata({
 
   if (!service) {
     return {
-      title: "Servizio non trovato - FORMARTI | Martina Vecchio",
+      description: "Il servizio richiesto non è stato trovato.",
     };
   }
 
   return {
-    title: `${service.title} - FORMARTI | Martina Vecchio`,
     description: service.description,
     openGraph: {
-      title: `${service.title} - FORMARTI | Martina Vecchio`,
       description: service.description,
     },
   };

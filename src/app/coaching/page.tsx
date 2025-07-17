@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Per Te",
   description:
     "Scopri le diverse modalità di incontro per il tuo percorso di crescita personale e professionale. Coaching individuale, consulenza filosofica e sessioni di gruppo personalizzati per le tue esigenze.",
   keywords: [
@@ -18,7 +17,6 @@ export const metadata: Metadata = {
     "modalità incontro",
   ],
   openGraph: {
-    title: "Per Te - FORMARTI | Martina Vecchio",
     description:
       "Scopri le diverse modalità di incontro per il tuo percorso di crescita personale e professionale. Coaching e consulenza filosofica personalizzati.",
     url: "https://martinavecchio.com/coaching",

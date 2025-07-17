@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Chi Sono",
   description:
     "Scopri chi sono: Martina Vecchio, laureata in Scienze dell'Educazione e Filosofia con Master in Consulenza Filosofica. Offro coaching e consulenza filosofica per accompagnarti nella crescita personale e professionale con professionalità ed etica.",
   keywords: [
@@ -19,7 +18,6 @@ export const metadata: Metadata = {
     "crescita personale",
   ],
   openGraph: {
-    title: "Chi Sono - FORMARTI | Martina Vecchio",
     description:
       "Scopri chi sono: Martina Vecchio, laureata in Scienze dell'Educazione e Filosofia con Master in Consulenza Filosofica.",
     url: "https://martinavecchio.com/about",

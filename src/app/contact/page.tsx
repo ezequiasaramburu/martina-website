@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contatti",
   description:
     "Entra in contatto con me per iniziare il tuo percorso di crescita personale e professionale. Prenota una consulenza gratuita di coaching o consulenza filosofica. Rispondi entro 24 ore.",
   keywords: [
@@ -19,7 +18,6 @@ export const metadata: Metadata = {
     "consulenza gratuita",
   ],
   openGraph: {
-    title: "Contatti - FORMARTI | Martina Vecchio",
     description:
       "Entra in contatto con me per iniziare il tuo percorso di crescita personale e professionale. Prenota una consulenza gratuita.",
     url: "https://martinavecchio.com/contact",
