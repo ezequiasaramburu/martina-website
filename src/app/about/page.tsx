@@ -6,13 +6,34 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Chi Sono - FORMARTI | Martina Vecchio",
+  title: "Chi Sono",
   description:
-    "Scopri chi sono: laureata in Scienze dell'Educazione e Filosofia, offro coaching e consulenza filosofica per accompagnarti nella crescita personale.",
+    "Scopri chi sono: Martina Vecchio, laureata in Scienze dell'Educazione e Filosofia con Master in Consulenza Filosofica. Offro coaching e consulenza filosofica per accompagnarti nella crescita personale e professionale con professionalità ed etica.",
+  keywords: [
+    "Martina Vecchio",
+    "coach certificato",
+    "consulente filosofico",
+    "laurea filosofia",
+    "scienze educazione",
+    "formazione professionale",
+    "crescita personale",
+  ],
   openGraph: {
     title: "Chi Sono - FORMARTI | Martina Vecchio",
     description:
-      "Scopri chi sono: laureata in Scienze dell'Educazione e Filosofia, offro coaching e consulenza filosofica per accompagnarti nella crescita personale.",
+      "Scopri chi sono: Martina Vecchio, laureata in Scienze dell'Educazione e Filosofia con Master in Consulenza Filosofica.",
+    url: "https://martinavecchio.com/about",
+    images: [
+      {
+        url: "/images/profile.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Martina Vecchio - Profilo professionale",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://martinavecchio.com/about",
   },
 };
 

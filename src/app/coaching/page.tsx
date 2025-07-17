@@ -5,13 +5,34 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Per Te - FORMARTI | Martina Vecchio",
+  title: "Per Te",
   description:
-    "Scopri le diverse modalità di incontro per il tuo percorso di crescita personale e professionale. Coaching e consulenza filosofica personalizzati.",
+    "Scopri le diverse modalità di incontro per il tuo percorso di crescita personale e professionale. Coaching individuale, consulenza filosofica e sessioni di gruppo personalizzati per le tue esigenze.",
+  keywords: [
+    "coaching individuale",
+    "consulenza filosofica",
+    "sessioni online",
+    "crescita personale",
+    "coaching di gruppo",
+    "sviluppo professionale",
+    "modalità incontro",
+  ],
   openGraph: {
     title: "Per Te - FORMARTI | Martina Vecchio",
     description:
       "Scopri le diverse modalità di incontro per il tuo percorso di crescita personale e professionale. Coaching e consulenza filosofica personalizzati.",
+    url: "https://martinavecchio.com/coaching",
+    images: [
+      {
+        url: "/images/profile.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Servizi di coaching personalizzati",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://martinavecchio.com/coaching",
   },
 };
 
