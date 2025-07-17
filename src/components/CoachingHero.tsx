@@ -8,11 +8,8 @@ const CoachingHero = () => {
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 leading-tight">
-          Io non posso insegnare niente a nessuno, <br />
-          posso solo aiutarli a pensare.
-          <span className="text-right text-xs md:text-md lg:text-lg text-white/70 font-medium italic lg:ml-12 md:ml-8 ml-4">
-            Socrate
-          </span>
+          &quot;Io non posso insegnare niente a nessuno, <br />
+          posso solo aiutarli a pensare.&quot;
         </h1>
         <p className="text-lg md:text-xl text-white/95 font-light leading-relaxed max-w-2xl mx-auto">
           Scopri le diverse modalità di incontro per il tuo percorso di crescita
