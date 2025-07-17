@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: "https://martinavecchio.com/contact",
     images: [
       {
-        url: "/images/profile.jpeg",
+        url: "https://martinavecchio.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Contatta Martina Vecchio per coaching",

@@ -60,8 +60,8 @@ export const organizationData = {
   image: "https://martinavecchio.com/images/profile.jpeg",
   logo: "https://martinavecchio.com/favicon.ico",
   sameAs: [
-    "https://www.linkedin.com/in/martinavecchio",
-    "https://www.instagram.com/formarti_martinavecchio",
+    "https://www.linkedin.com/in/martina-vecchio",
+    "https://www.instagram.com/martina_vecchio_formazione",
   ],
 };
 
@@ -71,7 +71,7 @@ export const personData = {
   description:
     "Laureata in Filosofia e Scienze dell'Educazione, specializzata in consulenza filosofica e coaching per la crescita personale e professionale.",
   url: "https://martinavecchio.com",
-  image: "https://martinavecchio.com/images/profile.jpeg",
+  image: "https://martinavecchio.com/og-image.jpg",
   worksFor: {
     "@type": "Organization",
     name: "FORMARTI",
@@ -97,7 +97,7 @@ export const personData = {
     "Filosofia Pratica",
   ],
   sameAs: [
-    "https://www.linkedin.com/in/martinavecchio",
-    "https://www.instagram.com/formarti_martinavecchio",
+    "https://www.linkedin.com/in/martina-vecchio",
+    "https://www.instagram.com/martina_vecchio_formazione",
   ],
 };
