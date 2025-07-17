@@ -45,7 +45,7 @@ const AboutPage = () => {
     {
       title: "Personalità",
       description:
-        '"Non mi fingo mai più intelligente, più bella, più giovane e più buona di quanto sono per apparire diversa, perché non ho bisogno di quelle menzogne. Vivo nell\'incredibile e indescrivibile lusso delle domande e delle risposte del mio tempo, che mi sono vicine e che sento come mie. Sono libera di vivere dove e come voglio, di leggere ciò che voglio, di pensare a tutto ciò che voglio come voglio, e di ascoltare chi voglio."',
+        '"Vivo nell\'incredibile e indescrivibile lusso delle domande e delle risposte del mio tempo, che mi sono vicine e che sento come mie. Sono libera di vivere dove e come voglio, di leggere ciò che voglio, di pensare a tutto ciò che voglio come voglio, e di ascoltare chi voglio."',
     },
     {
       title: "Eticità",

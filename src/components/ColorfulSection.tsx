@@ -66,7 +66,7 @@ const sectionData: SectionData[] = [
     id: "eating",
     title: "Orientamento alla Scelta",
     description:
-      "La strada giusta è quella che scegli tu. <br /> Sei davanti a una scelta importante e ti senti incerto? <br /> Ti offro uno spazio sicuro e dedicato per esplorare passioni, dubbi e possibilità, sia nella vita personale che nel percorso professionale. Insieme analizzeremo i tuoi valori, le tue aspirazioni e le opportunità, per costruire un progetto di crescita che rispecchi davvero chi sei, aiutandoti a prendere decisioni autentiche.",
+      "La strada giusta è quella che scegli tu. <br /> Sei davanti ad una scelta importante e ti senti incerto? <br /> Ti offro uno spazio sicuro e dedicato per esplorare passioni, dubbi e possibilità, sia nella vita personale che nel percorso professionale. Insieme analizzeremo i tuoi valori, le tue aspirazioni e le opportunità, per costruire un progetto di crescita che rispecchi davvero chi sei.",
     backgroundColor: "bg-purple-500",
     textColor: "text-white",
     type: "text",
@@ -84,7 +84,7 @@ const sectionData: SectionData[] = [
     id: "style",
     title: "Consulenza Filosofica",
     description:
-      "Pensiero critico per scelte etiche. <br /> Propongo un percorso di riflessione filosofica per persone e aziende, volto ad approfondire valori, senso e significato delle azioni. Supporto decisioni strategiche integrando temi cruciali come business ethics, responsabilità sociale e le sfide dell’intelligenza artificiale. <br /> Un percorso per un equilibrio consapevole tra innovazione e sostenibilità.",
+      "Pensiero critico per scelte etiche. <br /> Propongo un percorso di riflessione filosofica per persone e aziende, volto ad approfondire valori, senso e significato delle azioni. Supporto decisioni strategiche integrando temi cruciali come business ethics, responsabilità sociale e le sfide dell’intelligenza artificiale. <br /> Il divergente che chiede la direzione, il vero e il falso.",
     backgroundColor: "bg-teal-400",
     textColor: "text-white",
     type: "text",
