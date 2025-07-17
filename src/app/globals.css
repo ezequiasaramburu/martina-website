@@ -130,26 +130,7 @@ html {
   animation: spin 1s linear infinite;
 }
 
-/* Custom border colors for loader */
-.border-t-blue-400 {
-  border-top-color: var(--color-blue-400);
-}
 
-.border-t-green-400 {
-  border-top-color: var(--color-green-400);
-}
-
-.border-t-purple-500 {
-  border-top-color: var(--color-purple-500);
-}
-
-.border-t-teal-400 {
-  border-top-color: var(--color-teal-400);
-}
-
-.border-t-accent-teal {
-  border-top-color: var(--color-accent-teal);
-}
 
 .slide-hidden {
   opacity: 0;
