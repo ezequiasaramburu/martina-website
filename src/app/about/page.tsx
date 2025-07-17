@@ -58,9 +58,9 @@ const AboutPage = () => {
     <main>
       <Header />
       <AboutHero
-        title="Ciao, sono Martina Vecchio."
+        title="Ciao, <br /> sono Martina Vecchio."
         subtitle="In FORMARTI c’è il mio nome, la mia visione, il desiderio profondo di far fiorire talenti, consapevolezze, possibilità. Non è solo un progetto professionale: è il mio modo di toccare vite, di contribuire al cambiamento, con empatia e presenza."
-        imageSrc="/images/profile.jpeg"
+        imageSrc="/images/img.jpeg"
         imageAlt="Martina Vecchio sitting on a wall with graffiti in a natural setting"
       />
 

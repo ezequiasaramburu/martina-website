@@ -164,6 +164,12 @@ nav span:focus-visible {
   outline: none;
 }
 
+/* Remove focus outline from ColorfulSection links */
+.colorful-section a:focus,
+.colorful-section a:focus-visible {
+  outline: none;
+}
+
 /* Button reset */
 button {
   background: none;

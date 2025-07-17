@@ -105,7 +105,7 @@ const TextSquare = ({ section }: { section: SectionData }) => {
   const slug = getSlugFromTitle(section.title);
 
   return (
-    <Link href={`/servizi/${slug}`} className="block h-full">
+    <Link href={`/servizi/${slug}`} className="block h-full focus:outline-0">
       <div
         className={`${section.backgroundColor} ${section.textColor} p-6 md:p-8 lg:p-12 flex flex-col justify-center items-center text-center h-full hover:brightness-110 transition-all duration-300 cursor-pointer`}
       >
