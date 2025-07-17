@@ -147,6 +147,10 @@ html {
   border-top-color: var(--color-teal-400);
 }
 
+.border-t-accent-teal {
+  border-top-color: var(--color-accent-teal);
+}
+
 .slide-hidden {
   opacity: 0;
 }
