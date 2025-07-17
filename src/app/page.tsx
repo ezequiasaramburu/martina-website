@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: "https://martinavecchio.com",
     images: [
       {
-        url: "/images/profile.jpeg",
+        url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Martina Vecchio - Educatrice e Consulente Filosofico",
