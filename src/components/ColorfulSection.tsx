@@ -258,7 +258,7 @@ const ColorfulSection = () => {
       <div className="fixed bottom-8 right-8 z-50">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all duration-300"
+          className="bg-white bg-opacity-20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-opacity-30 transition-all duration-300 cta-button"
           aria-label="Back to top"
         >
           <ArrowUp className="w-6 h-6" />

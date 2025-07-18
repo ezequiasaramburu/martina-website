@@ -170,6 +170,12 @@ nav span:focus-visible {
   outline: none;
 }
 
+/* Remove focus outline from CTA buttons */
+.cta-button:focus,
+.cta-button:focus-visible {
+  outline: none;
+}
+
 /* Button reset */
 button {
   background: none;
@@ -205,6 +211,59 @@ a {
 a:hover .nav-underline::after,
 .servizi-hover:hover .nav-underline::after {
   transform: scaleX(1);
+}
+
+/* Fancy CTA Button Effects */
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:active {
+  transform: translateY(0) scale(0.98);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Accent button glow effect */
+.cta-button.cta-accent {
+  box-shadow: 0 4px 15px rgba(32, 178, 170, 0.2);
+}
+
+.cta-button.cta-accent:hover {
+  box-shadow: 0 8px 25px rgba(32, 178, 170, 0.3), 0 0 20px rgba(32, 178, 170, 0.1);
+}
+
+/* Dark button subtle glow */
+.cta-button.cta-dark:hover {
+  box-shadow: 0 8px 25px rgba(15, 15, 15, 0.3), 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+/* Ripple effect */
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:active::before {
+  width: 300px;
+  height: 300px;
+  transition: width 0.2s, height 0.2s;
 }
 
 /* Custom breakpoint for navigation at 795px */

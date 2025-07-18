@@ -192,7 +192,7 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="bg-dark-900 text-white px-8 py-3 font-semibold tracking-wide hover:bg-accent-teal focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 transition-colors border-2 border-dark-900 hover:border-accent-teal disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-dark-900 text-white px-8 py-3 font-semibold tracking-wide hover:bg-accent-teal focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 transition-colors border-2 border-dark-900 hover:border-accent-teal disabled:opacity-50 disabled:cursor-not-allowed cta-button cta-dark"
               style={{
                 background: isSubmitting ? "#6b7280" : "#0f0f0f",
                 color: "#ffffff",

@@ -137,7 +137,7 @@ const ServiceDetailContent = ({
           </h2>
           <Link
             href="/contact"
-            className={`inline-block ${backgroundColor} px-8 py-4 font-semibold text-lg`}
+            className={`inline-block ${backgroundColor} px-8 py-4 font-semibold text-lg cta-button cta-dark`}
             style={{ color: "white" }}
           >
             Contattami Ora

@@ -50,7 +50,7 @@ const BookShowcase = ({
               href={buttonLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-accent-teal text-white px-8 py-4 font-medium text-lg"
+              className="inline-block bg-accent-teal text-white px-8 py-4 font-medium text-lg cta-button cta-accent"
             >
               {buttonText}
             </a>

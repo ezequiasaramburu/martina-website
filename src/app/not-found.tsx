@@ -63,7 +63,7 @@ export default function NotFound() {
             >
               <Link
                 href="/"
-                className="flex items-center gap-2 bg-accent-teal text-dark-900 px-6 py-3 rounded-lg font-semibold tracking-wide uppercase hover:bg-accent-teal/90 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 focus:ring-offset-dark-900"
+                className="flex items-center gap-2 bg-accent-teal text-dark-900 px-6 py-3 font-semibold tracking-wide uppercase hover:bg-accent-teal/90 transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-accent-teal focus:ring-offset-2 focus:ring-offset-dark-900 cta-button cta-accent"
               >
                 <Home className="w-5 h-5" />
                 Torna alla Home
