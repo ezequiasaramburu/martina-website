@@ -58,7 +58,7 @@ const AboutHero = ({ title, subtitle, imageSrc, imageAlt }: AboutHeroProps) => {
           </div>
 
           {/* Overlapping text box */}
-          <div className="absolute left-4 lg:left-16 top-1/2 transform -translate-y-1/2 bg-dark-900 p-8 lg:p-10 max-w-sm lg:max-w-md shadow-2xl">
+          <div className="absolute left-4 lg:left-12 top-1/2 transform -translate-y-1/2 bg-dark-900 p-8 lg:p-10 max-w-sm lg:max-w-md shadow-2xl">
             <h1
               className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6 leading-tight"
               dangerouslySetInnerHTML={{ __html: title }}
