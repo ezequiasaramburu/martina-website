@@ -2,8 +2,11 @@
 
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const ContactForm = () => {
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,6 +45,17 @@ const ContactForm = () => {
     setSubmitStatus("idle");
 
     try {
+      // Execute reCAPTCHA
+      if (!executeRecaptcha) {
+        throw new Error("reCAPTCHA not available");
+      }
+
+      const recaptchaToken = await executeRecaptcha("contact_form");
+
+      if (!recaptchaToken) {
+        throw new Error("Failed to verify reCAPTCHA");
+      }
+
       const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
       const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
@@ -56,6 +70,7 @@ const ContactForm = () => {
         subject: formData.subject,
         message: formData.message,
         to_name: "Martina",
+        recaptcha_token: recaptchaToken,
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);

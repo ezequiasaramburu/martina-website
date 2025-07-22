@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import StructuredData, { organizationData } from "@/components/StructuredData";
+import RecaptchaProvider from "@/components/RecaptchaProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -124,7 +125,9 @@ export default function RootLayout({
 
         <StructuredData type="Organization" data={organizationData} />
 
-        <div className="min-h-screen bg-dark-900">{children}</div>
+        <RecaptchaProvider>
+          <div className="min-h-screen bg-dark-900">{children}</div>
+        </RecaptchaProvider>
       </body>
     </html>
   );
