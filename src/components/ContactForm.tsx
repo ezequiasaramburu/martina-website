@@ -2,9 +2,12 @@
 
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha,
+} from "react-google-recaptcha-v3";
 
-const ContactForm = () => {
+const ContactFormContent = () => {
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   const [formData, setFormData] = useState({
@@ -114,14 +117,13 @@ const ContactForm = () => {
         {submitStatus === "error" && (
           <div className="mb-8 p-4 bg-red-50 border border-red-200 rounded-lg">
             <p className="text-red-800 text-center font-medium">
-              Si è verificato un errore nell&apos;invio del messaggio. Riprova
-              più tardi.
+              Errore durante l&apos;invio del messaggio. Riprova più tardi.
             </p>
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label
                 htmlFor="name"
@@ -133,15 +135,14 @@ const ContactForm = () => {
                 type="text"
                 id="name"
                 name="name"
+                required
                 value={formData.name}
                 onChange={handleChange}
-                required
                 disabled={isSubmitting}
                 className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="Il tuo nome"
               />
             </div>
-
             <div>
               <label
                 htmlFor="email"
@@ -153,12 +154,12 @@ const ContactForm = () => {
                 type="email"
                 id="email"
                 name="email"
+                required
                 value={formData.email}
                 onChange={handleChange}
-                required
                 disabled={isSubmitting}
                 className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
-                placeholder="your.email@example.com"
+                placeholder="tua.email@esempio.com"
               />
             </div>
           </div>
@@ -174,9 +175,9 @@ const ContactForm = () => {
               type="text"
               id="subject"
               name="subject"
+              required
               value={formData.subject}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
               className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder="Ambito di interesse"
@@ -193,11 +194,11 @@ const ContactForm = () => {
             <textarea
               id="message"
               name="message"
+              required
+              rows={6}
               value={formData.message}
               onChange={handleChange}
-              required
               disabled={isSubmitting}
-              rows={6}
               className="w-full px-4 py-3 border border-gray-300 rounded-none focus:outline-none focus:ring-2 focus:ring-accent-teal focus:border-accent-teal transition-colors resize-vertical text-dark-900 bg-white placeholder-gray-500 disabled:opacity-50 disabled:cursor-not-allowed"
               placeholder="Descrivi i tuoi obiettivi, i tuoi problemi o le tue domande..."
             />
@@ -222,6 +223,21 @@ const ContactForm = () => {
         </form>
       </div>
     </section>
+  );
+};
+
+const ContactForm = () => {
+  const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+
+  if (!recaptchaSiteKey) {
+    console.warn("reCAPTCHA site key not found");
+    return <ContactFormContent />;
+  }
+
+  return (
+    <GoogleReCaptchaProvider reCaptchaKey={recaptchaSiteKey}>
+      <ContactFormContent />
+    </GoogleReCaptchaProvider>
   );
 };
 
