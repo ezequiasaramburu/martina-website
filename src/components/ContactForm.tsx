@@ -42,6 +42,24 @@ const ContactFormContent = () => {
     }));
   };
 
+  const verifyRecaptcha = async (token: string) => {
+    try {
+      const response = await fetch("/api/verify-recaptcha", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ token }),
+      });
+
+      const data = await response.json();
+      return data.success;
+    } catch (error) {
+      console.error("reCAPTCHA verification error:", error);
+      return false;
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -57,6 +75,13 @@ const ContactFormContent = () => {
 
       if (!recaptchaToken) {
         throw new Error("Failed to verify reCAPTCHA");
+      }
+
+      // Verify reCAPTCHA token on client-side
+      const isHuman = await verifyRecaptcha(recaptchaToken);
+
+      if (!isHuman) {
+        throw new Error("reCAPTCHA verification failed");
       }
 
       const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
